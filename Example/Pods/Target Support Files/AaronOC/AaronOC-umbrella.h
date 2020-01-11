@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "TestModel.h"
 
 FOUNDATION_EXPORT double AaronOCVersionNumber;
 FOUNDATION_EXPORT const unsigned char AaronOCVersionString[];

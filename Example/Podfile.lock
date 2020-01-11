@@ -20,7 +20,7 @@ DEPENDENCIES:
   - Specta
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Expecta
     - "Expecta+Snapshots"
     - FBSnapshotTestCase
@@ -31,12 +31,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AaronOC: 5e64e8d4bf8733c4f18b0c0f1d697ba13d88f6ca
+  AaronOC: 50a3d3a4e4c7c1fa4fe15822865bc80f7323cdbc
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: 964c3706378c2f5bb2120dce8acbd6727696d5ab
+PODFILE CHECKSUM: 4360c95d89a68ce54be0039c42ca4bec22e13086
 
 COCOAPODS: 1.8.4
