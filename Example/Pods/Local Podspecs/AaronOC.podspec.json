@@ -1,0 +1,22 @@
+{
+  "name": "AaronOC",
+  "version": "0.1.0",
+  "summary": "A short description of AaronOC.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/AaronYin0514/AaronOC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AaronYin0514": "562540603@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/AaronYin0514/AaronOC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AaronOC/Classes/**/*"
+}

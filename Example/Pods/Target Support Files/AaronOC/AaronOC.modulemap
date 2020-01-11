@@ -1,0 +1,6 @@
+framework module AaronOC {
+  umbrella header "AaronOC-umbrella.h"
+
+  export *
+  module * { export * }
+}
