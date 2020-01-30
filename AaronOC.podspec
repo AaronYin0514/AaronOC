@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AaronOC'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Aaron私有库'
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation'
-  s.library = 'libxml2'
+  s.library = 'xml2'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.xcconfig = {'HEADER_SEARCH_PATHS' =>'${SDK_ROOT}/usr/include/libxml2'}
 end

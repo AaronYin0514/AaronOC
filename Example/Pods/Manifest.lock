@@ -1,5 +1,5 @@
 PODS:
-  - AaronOC (0.1.0)
+  - AaronOC (0.2.1)
   - Expecta (1.0.6)
   - "Expecta+Snapshots (3.1.1)":
     - Expecta (~> 1.0)
@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AaronOC: 50a3d3a4e4c7c1fa4fe15822865bc80f7323cdbc
+  AaronOC: 5c489f38791a6eaedb3b6fff82af12d5ab7de429
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
