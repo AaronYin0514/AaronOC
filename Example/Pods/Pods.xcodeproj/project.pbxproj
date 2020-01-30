@@ -117,6 +117,32 @@
 		ACBDE7479CEDFD9F3261E26D6B1015FC /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4825F999D0804E1F8AD53546928C3B /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD96736DFA1A1A28B31F13E7818FCFE2 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = FF453CC0D321E182D58A17C8CBA7C761 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		ADC88A4EE6896AE4E6412F0128AB38C5 /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BECA7EB5552EB5421C792ACB73D7B6 /* SPTExampleGroup.m */; };
+		B15C3B3F23E306DA008064E0 /* GHDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B1F23E306D9008064E0 /* GHDevice.h */; };
+		B15C3B4023E306DA008064E0 /* GHDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B2023E306D9008064E0 /* GHDevice.m */; };
+		B15C3B4123E306DA008064E0 /* GHNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B2223E306D9008064E0 /* GHNetworkReachabilityManager.h */; };
+		B15C3B4223E306DA008064E0 /* GHURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B2323E306D9008064E0 /* GHURLResponseSerialization.h */; };
+		B15C3B4323E306DA008064E0 /* GHURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B2423E306D9008064E0 /* GHURLRequestSerialization.h */; };
+		B15C3B4423E306DA008064E0 /* GHURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B2523E306D9008064E0 /* GHURLSessionManager.h */; };
+		B15C3B4523E306DA008064E0 /* GHSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B2623E306D9008064E0 /* GHSecurityPolicy.m */; };
+		B15C3B4623E306DA008064E0 /* GHNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B2723E306D9008064E0 /* GHNetworking.h */; };
+		B15C3B4723E306DA008064E0 /* GHHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B2823E306D9008064E0 /* GHHTTPSessionManager.h */; };
+		B15C3B4823E306DA008064E0 /* GHURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B2923E306D9008064E0 /* GHURLSessionManager.m */; };
+		B15C3B4923E306DA008064E0 /* GHURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B2A23E306D9008064E0 /* GHURLRequestSerialization.m */; };
+		B15C3B4A23E306DA008064E0 /* GHURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B2B23E306D9008064E0 /* GHURLResponseSerialization.m */; };
+		B15C3B4B23E306DA008064E0 /* GHNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B2C23E306D9008064E0 /* GHNetworkReachabilityManager.m */; };
+		B15C3B4C23E306DA008064E0 /* GHSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B2D23E306D9008064E0 /* GHSecurityPolicy.h */; };
+		B15C3B4D23E306DA008064E0 /* GHHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B2E23E306D9008064E0 /* GHHTTPSessionManager.m */; };
+		B15C3B4E23E306DA008064E0 /* GHCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B2F23E306D9008064E0 /* GHCompatibilityMacros.h */; };
+		B15C3B4F23E306DA008064E0 /* ZZFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B3123E306D9008064E0 /* ZZFileCache.m */; };
+		B15C3B5023E306DA008064E0 /* ZZFileCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B3223E306D9008064E0 /* ZZFileCache.h */; };
+		B15C3B5123E306DA008064E0 /* ZZSandboxPath.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B3423E306D9008064E0 /* ZZSandboxPath.h */; };
+		B15C3B5223E306DA008064E0 /* ZZSandboxPath.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B3523E306D9008064E0 /* ZZSandboxPath.m */; };
+		B15C3B5323E306DA008064E0 /* ZZAPPInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B3723E306DA008064E0 /* ZZAPPInfo.h */; };
+		B15C3B5423E306DA008064E0 /* ZZAPPInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B3823E306DA008064E0 /* ZZAPPInfo.m */; };
+		B15C3B5523E306DA008064E0 /* GHAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B3A23E306DA008064E0 /* GHAlgorithm.m */; };
+		B15C3B5623E306DA008064E0 /* GHAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B3B23E306DA008064E0 /* GHAlgorithm.h */; };
+		B15C3B5723E306DA008064E0 /* ZZMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3B3D23E306DA008064E0 /* ZZMigration.m */; };
+		B15C3B5823E306DA008064E0 /* ZZMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = B15C3B3E23E306DA008064E0 /* ZZMigration.h */; };
 		B24C0951E730C8D7B6539598555A0126 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F0CF3F420E5310819B81738FA9D688 /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B2B5271CE555182511BFDAA78A16085D /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0626F0D0A083B4EBF30218415425775E /* SPTExample.m */; };
 		B31E1ABB0DF9F6E7C3B8BEC90C04FCBE /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = DB82FD3B105ABD09C641F029F96C90FC /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -352,6 +378,32 @@
 		ADEBFC66418A2CF0AFED343FAD173D61 /* Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Specta-prefix.pch"; sourceTree = "<group>"; };
 		AE4CAF2BB2132ECA2E445AB24D7E5DE3 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
 		AF7FC6DD0FF32838D557850FBD111B68 /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		B15C3B1F23E306D9008064E0 /* GHDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDevice.h; sourceTree = "<group>"; };
+		B15C3B2023E306D9008064E0 /* GHDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDevice.m; sourceTree = "<group>"; };
+		B15C3B2223E306D9008064E0 /* GHNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		B15C3B2323E306D9008064E0 /* GHURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHURLResponseSerialization.h; sourceTree = "<group>"; };
+		B15C3B2423E306D9008064E0 /* GHURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHURLRequestSerialization.h; sourceTree = "<group>"; };
+		B15C3B2523E306D9008064E0 /* GHURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHURLSessionManager.h; sourceTree = "<group>"; };
+		B15C3B2623E306D9008064E0 /* GHSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSecurityPolicy.m; sourceTree = "<group>"; };
+		B15C3B2723E306D9008064E0 /* GHNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHNetworking.h; sourceTree = "<group>"; };
+		B15C3B2823E306D9008064E0 /* GHHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHHTTPSessionManager.h; sourceTree = "<group>"; };
+		B15C3B2923E306D9008064E0 /* GHURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHURLSessionManager.m; sourceTree = "<group>"; };
+		B15C3B2A23E306D9008064E0 /* GHURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHURLRequestSerialization.m; sourceTree = "<group>"; };
+		B15C3B2B23E306D9008064E0 /* GHURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHURLResponseSerialization.m; sourceTree = "<group>"; };
+		B15C3B2C23E306D9008064E0 /* GHNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		B15C3B2D23E306D9008064E0 /* GHSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSecurityPolicy.h; sourceTree = "<group>"; };
+		B15C3B2E23E306D9008064E0 /* GHHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHHTTPSessionManager.m; sourceTree = "<group>"; };
+		B15C3B2F23E306D9008064E0 /* GHCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCompatibilityMacros.h; sourceTree = "<group>"; };
+		B15C3B3123E306D9008064E0 /* ZZFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFileCache.m; sourceTree = "<group>"; };
+		B15C3B3223E306D9008064E0 /* ZZFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFileCache.h; sourceTree = "<group>"; };
+		B15C3B3423E306D9008064E0 /* ZZSandboxPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSandboxPath.h; sourceTree = "<group>"; };
+		B15C3B3523E306D9008064E0 /* ZZSandboxPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSandboxPath.m; sourceTree = "<group>"; };
+		B15C3B3723E306DA008064E0 /* ZZAPPInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZAPPInfo.h; sourceTree = "<group>"; };
+		B15C3B3823E306DA008064E0 /* ZZAPPInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZAPPInfo.m; sourceTree = "<group>"; };
+		B15C3B3A23E306DA008064E0 /* GHAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHAlgorithm.m; sourceTree = "<group>"; };
+		B15C3B3B23E306DA008064E0 /* GHAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHAlgorithm.h; sourceTree = "<group>"; };
+		B15C3B3D23E306DA008064E0 /* ZZMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZMigration.m; sourceTree = "<group>"; };
+		B15C3B3E23E306DA008064E0 /* ZZMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZMigration.h; sourceTree = "<group>"; };
 		B470BB15D74EDC3BD4F164143A9EF861 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
 		B4F93464F5B375832F8763551FD931A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B75206D07413613FA601F23D4F7CF1BF /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
@@ -735,6 +787,13 @@
 		920D2D6527D029B7084738B0D036E05D /* AaronOC */ = {
 			isa = PBXGroup;
 			children = (
+				B15C3B1E23E306D9008064E0 /* GHDevice */,
+				B15C3B2123E306D9008064E0 /* GHNetworking */,
+				B15C3B3923E306DA008064E0 /* Utils */,
+				B15C3B3623E306DA008064E0 /* ZZAPPInfo */,
+				B15C3B3023E306D9008064E0 /* ZZFileCache */,
+				B15C3B3C23E306DA008064E0 /* ZZMigration */,
+				B15C3B3323E306D9008064E0 /* ZZSandbox */,
 				1D24E24A8B7A290D111AB2FE9436A744 /* Pod */,
 				0C1CB4C938AAFA32213EA3CB1E289EA5 /* Support Files */,
 			);
@@ -764,6 +823,88 @@
 				0F255F51508C6B15EC8475D3DC3A89CC /* SwiftSupport */,
 			);
 			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		B15C3B1E23E306D9008064E0 /* GHDevice */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3B1F23E306D9008064E0 /* GHDevice.h */,
+				B15C3B2023E306D9008064E0 /* GHDevice.m */,
+			);
+			name = GHDevice;
+			path = AaronOC/Classes/GHDevice;
+			sourceTree = "<group>";
+		};
+		B15C3B2123E306D9008064E0 /* GHNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3B2223E306D9008064E0 /* GHNetworkReachabilityManager.h */,
+				B15C3B2323E306D9008064E0 /* GHURLResponseSerialization.h */,
+				B15C3B2423E306D9008064E0 /* GHURLRequestSerialization.h */,
+				B15C3B2523E306D9008064E0 /* GHURLSessionManager.h */,
+				B15C3B2623E306D9008064E0 /* GHSecurityPolicy.m */,
+				B15C3B2723E306D9008064E0 /* GHNetworking.h */,
+				B15C3B2823E306D9008064E0 /* GHHTTPSessionManager.h */,
+				B15C3B2923E306D9008064E0 /* GHURLSessionManager.m */,
+				B15C3B2A23E306D9008064E0 /* GHURLRequestSerialization.m */,
+				B15C3B2B23E306D9008064E0 /* GHURLResponseSerialization.m */,
+				B15C3B2C23E306D9008064E0 /* GHNetworkReachabilityManager.m */,
+				B15C3B2D23E306D9008064E0 /* GHSecurityPolicy.h */,
+				B15C3B2E23E306D9008064E0 /* GHHTTPSessionManager.m */,
+				B15C3B2F23E306D9008064E0 /* GHCompatibilityMacros.h */,
+			);
+			name = GHNetworking;
+			path = AaronOC/Classes/GHNetworking;
+			sourceTree = "<group>";
+		};
+		B15C3B3023E306D9008064E0 /* ZZFileCache */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3B3123E306D9008064E0 /* ZZFileCache.m */,
+				B15C3B3223E306D9008064E0 /* ZZFileCache.h */,
+			);
+			name = ZZFileCache;
+			path = AaronOC/Classes/ZZFileCache;
+			sourceTree = "<group>";
+		};
+		B15C3B3323E306D9008064E0 /* ZZSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3B3423E306D9008064E0 /* ZZSandboxPath.h */,
+				B15C3B3523E306D9008064E0 /* ZZSandboxPath.m */,
+			);
+			name = ZZSandbox;
+			path = AaronOC/Classes/ZZSandbox;
+			sourceTree = "<group>";
+		};
+		B15C3B3623E306DA008064E0 /* ZZAPPInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3B3723E306DA008064E0 /* ZZAPPInfo.h */,
+				B15C3B3823E306DA008064E0 /* ZZAPPInfo.m */,
+			);
+			name = ZZAPPInfo;
+			path = AaronOC/Classes/ZZAPPInfo;
+			sourceTree = "<group>";
+		};
+		B15C3B3923E306DA008064E0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3B3A23E306DA008064E0 /* GHAlgorithm.m */,
+				B15C3B3B23E306DA008064E0 /* GHAlgorithm.h */,
+			);
+			name = Utils;
+			path = AaronOC/Classes/Utils;
+			sourceTree = "<group>";
+		};
+		B15C3B3C23E306DA008064E0 /* ZZMigration */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3B3D23E306DA008064E0 /* ZZMigration.m */,
+				B15C3B3E23E306DA008064E0 /* ZZMigration.h */,
+			);
+			name = ZZMigration;
+			path = AaronOC/Classes/ZZMigration;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -940,6 +1081,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				9344163B3FBF392C9532FE78E995C571 /* AaronOC-umbrella.h in Headers */,
+				B15C3B5623E306DA008064E0 /* GHAlgorithm.h in Headers */,
+				B15C3B4E23E306DA008064E0 /* GHCompatibilityMacros.h in Headers */,
+				B15C3B5023E306DA008064E0 /* ZZFileCache.h in Headers */,
+				B15C3B4223E306DA008064E0 /* GHURLResponseSerialization.h in Headers */,
+				B15C3B4723E306DA008064E0 /* GHHTTPSessionManager.h in Headers */,
+				B15C3B5123E306DA008064E0 /* ZZSandboxPath.h in Headers */,
+				B15C3B4423E306DA008064E0 /* GHURLSessionManager.h in Headers */,
+				B15C3B4323E306DA008064E0 /* GHURLRequestSerialization.h in Headers */,
+				B15C3B3F23E306DA008064E0 /* GHDevice.h in Headers */,
+				B15C3B5823E306DA008064E0 /* ZZMigration.h in Headers */,
+				B15C3B4C23E306DA008064E0 /* GHSecurityPolicy.h in Headers */,
+				B15C3B4623E306DA008064E0 /* GHNetworking.h in Headers */,
+				B15C3B5323E306DA008064E0 /* ZZAPPInfo.h in Headers */,
+				B15C3B4123E306DA008064E0 /* GHNetworkReachabilityManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1261,7 +1416,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15C3B5723E306DA008064E0 /* ZZMigration.m in Sources */,
+				B15C3B5223E306DA008064E0 /* ZZSandboxPath.m in Sources */,
+				B15C3B4023E306DA008064E0 /* GHDevice.m in Sources */,
+				B15C3B4823E306DA008064E0 /* GHURLSessionManager.m in Sources */,
+				B15C3B4B23E306DA008064E0 /* GHNetworkReachabilityManager.m in Sources */,
+				B15C3B4A23E306DA008064E0 /* GHURLResponseSerialization.m in Sources */,
+				B15C3B4923E306DA008064E0 /* GHURLRequestSerialization.m in Sources */,
+				B15C3B5523E306DA008064E0 /* GHAlgorithm.m in Sources */,
+				B15C3B4523E306DA008064E0 /* GHSecurityPolicy.m in Sources */,
+				B15C3B5423E306DA008064E0 /* ZZAPPInfo.m in Sources */,
 				21B838C8D39BABB7EC1F6AFDA770DA53 /* AaronOC-dummy.m in Sources */,
+				B15C3B4D23E306DA008064E0 /* GHHTTPSessionManager.m in Sources */,
+				B15C3B4F23E306DA008064E0 /* ZZFileCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
