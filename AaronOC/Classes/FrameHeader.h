@@ -9,6 +9,8 @@
 #ifndef FrameHeader_h
 #define FrameHeader_h
 
+#import "YYCategories.h"
+#import "ZZCategories.h"
 #import "NSData+Image.h"
 #import "UIImage+Ext.h"
 #import "UIImage+ImageFrame.h"

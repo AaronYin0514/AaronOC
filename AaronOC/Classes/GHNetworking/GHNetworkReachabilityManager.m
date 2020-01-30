@@ -136,7 +136,7 @@ static void GHNetworkReachabilityReleaseCallback(const void *info) {
     struct sockaddr_in address;
     bzero(&address, sizeof(address));
     address.sin_len = sizeof(address);
-    address.sin_family = GH_INET;
+    address.sin_family = AF_INET;
 #endif
     return [self managerForAddress:&address];
 }
