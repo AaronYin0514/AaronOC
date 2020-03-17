@@ -16,7 +16,7 @@ typedef enum : NSUInteger {
 } FKSortType;
 
 /// 冒泡排序
-static inline int *bubbleSort(int arr[], int count) {
+static inline int *bubbleSort(int arr[_Nonnull], int count) {
     int tmp;
     for (int i = 0; i < count-1; i++) {
         for (int j = 0; j < count - 1 - i; j++) {
@@ -31,7 +31,7 @@ static inline int *bubbleSort(int arr[], int count) {
 }
 
 /// 选择排序
-static inline int *selectSort(int arr[], int count) {
+static inline int *selectSort(int arr[_Nonnull], int count) {
     int minIndex,tmp;
     for (int i = 0; i < count - 1; i++) {
         minIndex = i;
@@ -40,9 +40,11 @@ static inline int *selectSort(int arr[], int count) {
                 minIndex = j;
             }
         }
-        tmp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = tmp;
+        if (i != minIndex) {
+            tmp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = tmp;
+        }
     }
     return arr;
 }
