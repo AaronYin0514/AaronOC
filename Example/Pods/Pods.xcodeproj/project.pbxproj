@@ -136,8 +136,8 @@
 		AD1294296323A5E7E26222ACE040F8CE /* ZZFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B81415308C98AA30EF4CB90C5D6F9301 /* ZZFileCache.m */; };
 		AD96736DFA1A1A28B31F13E7818FCFE2 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = FF453CC0D321E182D58A17C8CBA7C761 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		ADC88A4EE6896AE4E6412F0128AB38C5 /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BECA7EB5552EB5421C792ACB73D7B6 /* SPTExampleGroup.m */; };
-		B1E2EA3B2420798700B29768 /* ZZWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E2EA392420798700B29768 /* ZZWeakProxy.h */; };
-		B1E2EA3C2420798700B29768 /* ZZWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E2EA3A2420798700B29768 /* ZZWeakProxy.m */; };
+		B1E2EA40242083BA00B29768 /* ZZWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E2EA3E242083BA00B29768 /* ZZWeakProxy.h */; };
+		B1E2EA41242083BA00B29768 /* ZZWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E2EA3F242083BA00B29768 /* ZZWeakProxy.m */; };
 		B24C0951E730C8D7B6539598555A0126 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F0CF3F420E5310819B81738FA9D688 /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B2B5271CE555182511BFDAA78A16085D /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0626F0D0A083B4EBF30218415425775E /* SPTExample.m */; };
 		B31E1ABB0DF9F6E7C3B8BEC90C04FCBE /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = DB82FD3B105ABD09C641F029F96C90FC /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -404,8 +404,8 @@
 		AE4CAF2BB2132ECA2E445AB24D7E5DE3 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
 		AF7FC6DD0FF32838D557850FBD111B68 /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
 		AF878A168BE66D4A6771BFFB26BE0565 /* ZZFileCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZZFileCache.h; sourceTree = "<group>"; };
-		B1E2EA392420798700B29768 /* ZZWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZWeakProxy.h; sourceTree = "<group>"; };
-		B1E2EA3A2420798700B29768 /* ZZWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZWeakProxy.m; sourceTree = "<group>"; };
+		B1E2EA3E242083BA00B29768 /* ZZWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZWeakProxy.h; sourceTree = "<group>"; };
+		B1E2EA3F242083BA00B29768 /* ZZWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZWeakProxy.m; sourceTree = "<group>"; };
 		B30B25969821A3CCAD60B14A16DCBC30 /* GHSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GHSecurityPolicy.h; sourceTree = "<group>"; };
 		B470BB15D74EDC3BD4F164143A9EF861 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
 		B4F93464F5B375832F8763551FD931A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -894,13 +894,14 @@
 			path = AaronOC/Classes/ZZRouter;
 			sourceTree = "<group>";
 		};
-		B1E2EA34242078FE00B29768 /* ZZWeakProxy */ = {
+		B1E2EA3D242083BA00B29768 /* ZZWeakProxy */ = {
 			isa = PBXGroup;
 			children = (
-				B1E2EA392420798700B29768 /* ZZWeakProxy.h */,
-				B1E2EA3A2420798700B29768 /* ZZWeakProxy.m */,
+				B1E2EA3E242083BA00B29768 /* ZZWeakProxy.h */,
+				B1E2EA3F242083BA00B29768 /* ZZWeakProxy.m */,
 			);
-			path = ZZWeakProxy;
+			name = ZZWeakProxy;
+			path = AaronOC/Classes/ZZWeakProxy;
 			sourceTree = "<group>";
 		};
 		C2A76749DFCBC39C3FE15399ACF77C3F /* GHDevice */ = {
@@ -942,7 +943,7 @@
 		EE942EF64CA301313B655680AF52AA40 /* AaronOC */ = {
 			isa = PBXGroup;
 			children = (
-				B1E2EA34242078FE00B29768 /* ZZWeakProxy */,
+				B1E2EA3D242083BA00B29768 /* ZZWeakProxy */,
 				60B0E1B3D7DB42321A58C524604A7925 /* Algorithm */,
 				C2A76749DFCBC39C3FE15399ACF77C3F /* GHDevice */,
 				6C03D456CFB2ED465332F6F3B436FD0E /* GHNetworking */,
@@ -1102,7 +1103,7 @@
 				EE9A8F0560288C27C4822F548A8B3464 /* AaronOC-umbrella.h in Headers */,
 				488F4F0AF75BA95122814367D4AB9842 /* GHAlgorithm.h in Headers */,
 				F5C997BD3C54EE2EE87D2EAD845C22B2 /* GHCompatibilityMacros.h in Headers */,
-				B1E2EA3B2420798700B29768 /* ZZWeakProxy.h in Headers */,
+				B1E2EA40242083BA00B29768 /* ZZWeakProxy.h in Headers */,
 				6299ECC64B332252D9554D0DD202297D /* GHDevice.h in Headers */,
 				FC68867D6A8D956A76D4572F0E3BE513 /* GHHTTPSessionManager.h in Headers */,
 				0FF805E3522F6A530B1D5B967F939E2F /* GHNetworking.h in Headers */,
@@ -1403,7 +1404,7 @@
 				BEC2F890CA13EEFEAC55B07C4D90AEF6 /* GHHTTPSessionManager.m in Sources */,
 				D30F2BA681425B4934B1C3EA77403EA5 /* GHNetworkReachabilityManager.m in Sources */,
 				EB8457AB1F695ACD2AFE74C8C941F712 /* GHSecurityPolicy.m in Sources */,
-				B1E2EA3C2420798700B29768 /* ZZWeakProxy.m in Sources */,
+				B1E2EA41242083BA00B29768 /* ZZWeakProxy.m in Sources */,
 				0509F72D6792BC9AD64C8C1E5522DF51 /* GHURLRequestSerialization.m in Sources */,
 				51D326875C0EE108E03E79E60E112A09 /* GHURLResponseSerialization.m in Sources */,
 				960B5562133402994C77312F0F280FA6 /* GHURLSessionManager.m in Sources */,
