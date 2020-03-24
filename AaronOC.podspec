@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'AaronOC/Classes/**/*'
   
   # s.resource_bundles = {
-  #   'AaronOC' => ['AaronOC/Assets/*.png']
+  #   'AaronOC' => ['AaronOC/Assets/*{.xcassets,.bundle}']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
