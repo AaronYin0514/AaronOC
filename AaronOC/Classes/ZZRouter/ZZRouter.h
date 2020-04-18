@@ -113,4 +113,8 @@ typedef id (^ZZRouterObjectHandler)(NSDictionary *routerParameters);
  *  @return 返回生成的URL String
  */
 + (NSString *)generateURLWithPattern:(NSString *)pattern parameters:(NSArray *)parameters;
+
+
+
+- (NSMutableDictionary *)extractParametersFromURL:(NSString *)url matchExactly:(BOOL)exactly;
 @end

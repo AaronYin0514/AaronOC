@@ -32,9 +32,22 @@ NSString *const ZZRouterParameterUserInfo = @"ZZRouterParameterUserInfo";
     static ZZRouter *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[self alloc] init];
+        instance = [[super allocWithZone:NULL] init];
     });
     return instance;
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone{
+    return [ZZRouter sharedInstance];
+}
+
+//防止被拷贝
+- (id)copyWithZone:(NSZone *)zone{
+    return [ZZRouter sharedInstance];
+}
+//防止被拷贝
+- (id)mutableCopyWithZone:(NSZone *)zone{
+    return [ZZRouter sharedInstance];
 }
 
 + (void)registerURLPattern:(NSString *)URLPattern toHandler:(ZZRouterHandler)handler
@@ -195,7 +208,7 @@ NSString *const ZZRouterParameterUserInfo = @"ZZRouterParameterUserInfo";
 {
     NSMutableDictionary* parameters = [NSMutableDictionary dictionary];
     
-    parameters[ZZRouterParameterURL] = url;
+    //parameters[ZZRouterParameterURL] = url;
     
     NSMutableDictionary* subRoutes = self.routes;
     NSArray* pathComponents = [self pathComponentsFromURL:url];

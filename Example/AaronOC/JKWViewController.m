@@ -8,6 +8,15 @@
 
 #import "JKWViewController.h"
 
+
+@interface TestNavigationController : UINavigationController
+
+@end
+
+@implementation TestNavigationController
+
+@end
+
 @interface JKWViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -21,7 +30,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.dataSource = @[
-        @"Sort"
+        @"Sort",
+        @"Router"
     ];
 }
 
@@ -29,6 +39,25 @@
     [super viewDidLoad];
     self.navigationItem.title = @"事例";
     [self.view addSubview:self.tableView];
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(200, 300, 100, 44)];
+    [btn setTitle:@"测试" forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor blackColor];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(testAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)testAction:(UIButton *)sender {
+    Class class = TestNavigationController.class;
+    if (class && [[[class alloc] init] isKindOfClass:[UINavigationController class]]) {
+        UIViewController *controller = [UIViewController new];
+        controller.view.backgroundColor = [UIColor greenColor];
+        UINavigationController *nav = [[class alloc] initWithRootViewController:controller];
+        [self presentViewController:nav animated:YES completion:^{
+            
+        }];
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
