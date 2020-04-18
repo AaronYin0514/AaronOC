@@ -45,6 +45,9 @@ typedef id __nullable (^ColaHandler)(NSURL *url, NSDictionary *parameters, NSDic
 
 - (BOOL)openURL:(NSURL *)URL withUserInfo:(nullable NSDictionary *)userInfo object:(void(^)(id __nullable obj))object;
 
+#pragma mark - 判断是否存在路由
+
+- (BOOL)canOpenURL:(NSURL *)URL;
 
 @end
 

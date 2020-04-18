@@ -7,8 +7,7 @@
 //
 
 #import "RouterViewController.h"
-#import <AaronOC/ZZRouter.h>
-#import <AaronOC/Cola.h>
+#import <AaronOC/AaronOC.h>
 
 @interface RouterViewController ()
 
@@ -38,7 +37,7 @@
     
 //    self.cola = [Cola cola];
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(200, 300, 100, 44)];
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, [UIScreen mainScreen].bounds.size.width - 200, 44)];
     [btn setTitle:@"测试" forState:UIControlStateNormal];
     btn.backgroundColor = [UIColor blackColor];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -51,7 +50,21 @@
 //    [Cola cola];
 //    [self parsingParamsBenchmark];
 //    [self.class test];
-    [self test1];
+//    [self test1];
+    
+    NSURL *url = [NSURL URLWithString:@"navigator://test1?title=test1"];
+    NSDictionary *userInfo = @{@"color": [UIColor orangeColor]};
+//    [Cola.cola pushURL:[NSURL URLWithString:@"navigator://test1?title=test1"] withUserInfo:@{@"color": [UIColor greenColor]}];
+    
+//    [Cola.cola presentURL:[NSURL URLWithString:@"navigator://test1?title=test1"] withUserInfo:@{@"color": [UIColor orangeColor]} completion:^{
+//        NSLog(@"xxx");
+//    }];
+    
+    [Cola.cola presentURL:url withUserInfo:userInfo from:nil wrap:UINavigationController.class animated:YES completion:^{
+        NSLog(@"xxx2");
+    }];
+    
+    
 }
 
 - (void)test1 {
@@ -134,54 +147,6 @@
     
     NSLog(@"pathExtension: %@", url.pathExtension);
     NSLog(@"parameterString: %@", url.parameterString);
-}
-
-- (void)parsingParamsBenchmark {
-    int count = 2000;
-    NSMutableArray<NSString *> *urlStrings = [NSMutableArray arrayWithCapacity:count];
-    NSMutableArray<NSURL *> *urls = [NSMutableArray arrayWithCapacity:count];
-    for (int i = 0; i < count; i++) {
-        NSString *urlString = [NSString stringWithFormat:@"navigaror://test.test1.com/path/subpath%i?a=a&b=b&c=%d", i, i];
-        [urlStrings addObject:urlString];
-        [ZZRouter registerURLPattern:urlString toHandler:nil];
-        NSURL *url = [NSURL URLWithString:urlString];
-        [urls addObject:url];
-    }
-    
-//    self.aaray1 = urlStrings;
-//    self.aaray2 = urls;
-    
-    NSMutableArray *results1 = [NSMutableArray arrayWithCapacity:count];
-    NSMutableArray *results2 = [NSMutableArray arrayWithCapacity:count];
-
-    NSTimeInterval begin, end, time;
-
-    begin = CACurrentMediaTime();
-    @autoreleasepool {
-        for (int i = 0; i < count; i++) {
-            NSURLComponents *components = [[NSURLComponents alloc] initWithURL:urls[i] resolvingAgainstBaseURL:NO];
-            NSMutableDictionary *r = [NSMutableDictionary dictionaryWithCapacity:components.queryItems.count];
-            for (NSURLQueryItem *item in components.queryItems) {
-                r[item.name] = item.value;
-            }
-            [results1 addObject:r];
-        }
-    }
-    end = CACurrentMediaTime();
-    time = end - begin;
-    printf("URL:   %8.2f\n", time * 1000);
-
-    begin = CACurrentMediaTime();
-    @autoreleasepool {
-        for (int i = 0; i < count; i++) {
-            NSDictionary *r = [[ZZRouter new] extractParametersFromURL:urlStrings[i] matchExactly:NO];
-            [results2 addObject:r];
-        }
-    }
-    end = CACurrentMediaTime();
-    time = end - begin;
-    printf("Router:   %8.2f\n", time * 1000);
-    
 }
 
 

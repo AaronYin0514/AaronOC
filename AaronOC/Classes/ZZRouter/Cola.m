@@ -99,6 +99,15 @@ static dispatch_queue_t cola_read_queue() {
     return NO;
 }
 
+#pragma mark - 判断是否存在路由
+
+- (BOOL)canOpenURL:(NSURL *)URL {
+    if (!URL) { return NO; }
+    NSString *key = [self getKeyWithURL:URL];
+    if (!key.length) { return NO; }
+    return [self.routes objectForKey:key] != nil;
+}
+
 #pragma mark - Private
 
 - (void)addURL:(NSURL *)URL andHandler:(ColaHandler)handler {

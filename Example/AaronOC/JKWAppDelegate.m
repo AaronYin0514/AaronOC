@@ -8,12 +8,21 @@
 
 #import "JKWAppDelegate.h"
 #import <AaronOC/AaronOC.h>
+#import "NavigatorTestViewController.h"
 
 @implementation JKWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Cola.cola registerURL:[NSURL URLWithString:@"navigator://test1"] navigatorHandler:^UIViewController *(NSURL *URL, NSDictionary *parameters, NSDictionary *userInfo) {
+        NavigatorTestViewController *controller = [[NavigatorTestViewController alloc] init];
+        NSString *title = parameters[@"title"];
+        controller.navigationItem.title = title;
+        UIColor *color = userInfo[@"color"];
+        controller.view.backgroundColor = color;
+        return controller;
+    }];
     return YES;
 }
 
