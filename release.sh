@@ -16,14 +16,14 @@ pod repo push AaronOC AaronOC.podspec --allow-warnings
 
 echo "发布完成"
 
-if [ -d "~/.cocoapods/repos/AaronOC/AaronOC/Classes/" ]; then
+if [ -d "/Users/yinzhongzheng/.cocoapods/repos/AaronOC/AaronOC/Classes/" ]; then
         echo "包含Class文件夹，正在删除"
-        rm -rf ~/.cocoapods/repos/AaronOC/AaronOC/Classes
+        rm -rf /Users/yinzhongzheng/.cocoapods/repos/AaronOC/AaronOC/Classes
         echo "删除Class文件夹完成"
 fi
 
-if [ -d "~/.cocoapods/repos/AaronOC/AaronOC/Assets/" ]; then
+if [ -d "/Users/yinzhongzheng/.cocoapods/repos/AaronOC/AaronOC/Assets/" ]; then
         echo "包含Assets文件夹"
-        rm -rf ~/.cocoapods/repos/AaronOC/AaronOC/Assets
+        rm -rf /Users/yinzhongzheng/.cocoapods/repos/AaronOC/AaronOC/Assets
         echo "删除Assets文件夹完成"
 fi
