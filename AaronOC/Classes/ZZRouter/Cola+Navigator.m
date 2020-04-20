@@ -47,12 +47,22 @@
 }
 
 - (void)presentURL:(NSURL *)URL withUserInfo:(NSDictionary *)userInfo from:(UIViewController *)fromViewController wrap:(Class)wrap animated:(BOOL)flag completion:(void (^)(void))completion {
+    [self presentURL:URL withUserInfo:userInfo from:fromViewController wrap:wrap animated:flag willPresent:nil completion:completion];
+}
+
+- (void)presentURL:(NSURL *)URL withUserInfo:(nullable NSDictionary *)userInfo from:(nullable UIViewController *)fromViewController wrap:(nullable Class)wrap animated:(BOOL)flag willPresent:(BOOL (^ __nullable)(UIViewController *controller))will completion:(void (^ __nullable)(void))completion {
     __block UIViewController *controller;
     BOOL hasURL = [self openURL:URL withUserInfo:userInfo object:^(id obj) {
         controller = obj;
     }];
     if (!hasURL || ![controller isKindOfClass:[UIViewController class]]) { return; }
     UIViewController *presentedViewController = fromViewController ?: [UIViewController topMostViewController];
+    if (will) {
+        BOOL present = will(controller);
+        if (!present) {
+            return;
+        }
+    }
     if (wrap && [[[wrap alloc] init] isKindOfClass:[UINavigationController class]] && ![controller isKindOfClass:[UINavigationController class]]) {
         UINavigationController *navigationController = [[wrap alloc] initWithRootViewController:controller];
         [presentedViewController presentViewController:navigationController animated:flag completion:completion];

@@ -35,6 +35,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)presentURL:(NSURL *)URL withUserInfo:(nullable NSDictionary *)userInfo from:(nullable UIViewController *)fromViewController wrap:(nullable Class)wrap animated:(BOOL)flag completion:(void (^ __nullable)(void))completion;
 
+- (void)presentURL:(NSURL *)URL withUserInfo:(nullable NSDictionary *)userInfo from:(nullable UIViewController *)fromViewController wrap:(nullable Class)wrap animated:(BOOL)flag willPresent:(BOOL (^ __nullable)(UIViewController *controller))will completion:(void (^ __nullable)(void))completion;
+
 #pragma mark - Show Detail
 
 - (void)showDetailURL:(NSURL *)URL;
