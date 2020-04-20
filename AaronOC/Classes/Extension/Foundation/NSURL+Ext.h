@@ -13,6 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, readonly, copy) NSString *apiString;
 
+- (NSURL *)addParameter:(NSString *)parameter forKey:(NSString *)aKey;
+
+- (NSURL *)addParametersWithDictionary:(NSDictionary<NSString *, NSString *> *)parameters;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -6,6 +6,7 @@
 //
 
 #import "NSURL+Ext.h"
+#import "NSString+URL.h"
 
 @implementation NSURL (Ext)
 
@@ -24,6 +25,17 @@
         apiString = [apiString stringByAppendingString:self.path];
     }
     return apiString;
+}
+
+- (NSURL *)addParameter:(NSString *)parameter forKey:(NSString *)aKey {
+    if (!parameter.length || !aKey.length) { return nil; }
+    return [self addParametersWithDictionary:@{aKey: parameter}];
+}
+
+- (NSURL *)addParametersWithDictionary:(NSDictionary<NSString *, NSString *> *)parameters {
+    if (!self.absoluteString.length || !parameters.count) { return nil; }
+    NSString *query = GHQueryStringFromParameters(parameters);
+    return [NSURL URLWithString:[self.absoluteString stringByAppendingFormat:self.query ? @"&%@" : @"?%@", query]];
 }
 
 @end

@@ -145,6 +145,8 @@
 		AE389EEABD3A8E1157C6270318CE9B71 /* GHHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 372DC020907BB49D983217F19FC597C3 /* GHHTTPSessionManager.m */; };
 		B0C3259007AF31620694A6B66E6F9803 /* GHURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E886E291BE69ED41285DC4D13C114D /* GHURLSessionManager.m */; };
 		B1B8DF61B47B46AFFECE8E32EC2FDB66 /* GHURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AAE22447C11061E6A1A1FF582DFD42A /* GHURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1FB5A10244DE0DA00D92FF3 /* NSString+URL.h in Headers */ = {isa = PBXBuildFile; fileRef = B1FB5A0E244DE0DA00D92FF3 /* NSString+URL.h */; };
+		B1FB5A11244DE0DA00D92FF3 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FB5A0F244DE0DA00D92FF3 /* NSString+URL.m */; };
 		B20D37A4F8D95EDFBD27D3B14C7AED56 /* GHURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 788E59CA80020ABDAD92CA72A511EBEE /* GHURLRequestSerialization.m */; };
 		B24C0951E730C8D7B6539598555A0126 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F0CF3F420E5310819B81738FA9D688 /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B2B5271CE555182511BFDAA78A16085D /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0626F0D0A083B4EBF30218415425775E /* SPTExample.m */; };
@@ -433,6 +435,8 @@
 		AE4CAF2BB2132ECA2E445AB24D7E5DE3 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
 		AF7FC6DD0FF32838D557850FBD111B68 /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
 		B05403AC59E9FD2819392BB30094189E /* GHDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GHDevice.h; sourceTree = "<group>"; };
+		B1FB5A0E244DE0DA00D92FF3 /* NSString+URL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		B1FB5A0F244DE0DA00D92FF3 /* NSString+URL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
 		B470BB15D74EDC3BD4F164143A9EF861 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
 		B4F93464F5B375832F8763551FD931A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B623C3BD161030345F35A4D04D327FF2 /* ZZNavigator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZZNavigator.m; sourceTree = "<group>"; };
@@ -664,6 +668,8 @@
 				957ABB48318D926AD1B0117201958D8A /* NSData+Ext.m */,
 				15B97C81FA51DC128D6E564321364353 /* NSString+Ext.h */,
 				F5444524D67C80BE7549B006E7BADD2F /* NSString+Ext.m */,
+				B1FB5A0E244DE0DA00D92FF3 /* NSString+URL.h */,
+				B1FB5A0F244DE0DA00D92FF3 /* NSString+URL.m */,
 				860E8F9AB1F01B3FBDA51ABAF73316E0 /* NSURL+Ext.h */,
 				4042B6E5C1BB26A522D64DD37FD8FED6 /* NSURL+Ext.m */,
 			);
@@ -1227,6 +1233,7 @@
 				C752F55C65C52FA6F981751A38D6375F /* GHDevice.h in Headers */,
 				053084F551BFA656CE4A55B307C5C43C /* GHHTTPSessionManager.h in Headers */,
 				319766DD9AA495265E44970B1584D072 /* GHNetworking.h in Headers */,
+				B1FB5A10244DE0DA00D92FF3 /* NSString+URL.h in Headers */,
 				23A68C2721AC59BABA400919D18C4824 /* GHNetworkReachabilityManager.h in Headers */,
 				C2B485719A266EC6C3CB07AD419F26C1 /* GHSecurityPolicy.h in Headers */,
 				881BB49E0C79623872FF651A39EF3AE6 /* GHURLRequestSerialization.h in Headers */,
@@ -1500,6 +1507,7 @@
 				B7D9E3E4F8FBA63B2A95B8BDDCE499AE /* GHDevice.m in Sources */,
 				AE389EEABD3A8E1157C6270318CE9B71 /* GHHTTPSessionManager.m in Sources */,
 				1C82AA017B2F70ED9F6BC777ABEC72D4 /* GHNetworkReachabilityManager.m in Sources */,
+				B1FB5A11244DE0DA00D92FF3 /* NSString+URL.m in Sources */,
 				6450E4AD1E7BDF116581889E0277176F /* GHSecurityPolicy.m in Sources */,
 				B20D37A4F8D95EDFBD27D3B14C7AED56 /* GHURLRequestSerialization.m in Sources */,
 				F8A51A38EDEA759E7C44208CC74C8E9B /* GHURLResponseSerialization.m in Sources */,
