@@ -35,7 +35,6 @@ FOUNDATION_EXPORT NSString * GHPercentEscapedStringFromString(NSString *string);
 FOUNDATION_EXPORT NSString * GHQueryStringFromParameters(NSDictionary *parameters);
 
 FOUNDATION_EXPORT NSArray * GHQueryStringPairsFromDictionary(NSDictionary *dictionary);
-FOUNDATION_EXPORT NSArray * GHQueryStringPairsFromKeyAndValue(NSString * __nullable key, id value);
 
 @interface GHQueryStringPair : NSObject
 @property (readwrite, nonatomic, strong) id field;

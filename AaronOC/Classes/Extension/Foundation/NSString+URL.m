@@ -79,6 +79,8 @@ NSString * GHPercentEscapedStringFromString(NSString *string) {
 
 #pragma mark -
 
+FOUNDATION_EXPORT NSArray * GHQueryStringPairsFromKeyAndValue(NSString * __nullable key, id value);
+
 NSString * GHQueryStringFromParameters(NSDictionary *parameters) {
     NSMutableArray *mutablePairs = [NSMutableArray array];
     for (GHQueryStringPair *pair in GHQueryStringPairsFromDictionary(parameters)) {
