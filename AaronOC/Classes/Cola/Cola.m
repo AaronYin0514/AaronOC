@@ -6,7 +6,7 @@
 //
 
 #import "Cola.h"
-#import "NSString+Ext.h"
+#import "NSString+Cryptography.h"
 #import "NSURL+Ext.h"
 
 static dispatch_queue_t cola_register_queue() {

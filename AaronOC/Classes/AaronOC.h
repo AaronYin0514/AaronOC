@@ -9,8 +9,8 @@
 
 #import <AaronOC/GHAlgorithm.h>
 #import <AaronOC/ZZSort.h>
-#import <AaronOC/NSData+Ext.h>
-#import <AaronOC/NSString+Ext.h>
+#import <AaronOC/NSData+Cryptography.h>
+#import <AaronOC/NSString+Cryptography.h>
 #import <AaronOC/NSURL+Ext.h>
 #import <AaronOC/UIViewController+TopMost.h>
 #import <AaronOC/GHDevice.h>
@@ -27,8 +27,8 @@
 
 #import "GHAlgorithm.h"
 #import "ZZSort.h"
-#import "NSData+Ext.h"
-#import "NSString+Ext.h"
+#import "NSData+Cryptography.h"
+#import "NSString+Cryptography.h"
 #import "NSURL+Ext.h"
 #import "UIViewController+TopMost.h"
 #import "GHDevice.h"
