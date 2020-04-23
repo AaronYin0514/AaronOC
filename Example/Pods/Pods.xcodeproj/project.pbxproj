@@ -102,7 +102,6 @@
 		7967AB2E31F5D064244EB23735D0B3E8 /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AE1B3E9D5789E7A4F683B61B460362 /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7A6DD687A80CF29C06CC8E9E53AC94BD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2337D72B385D34C88E0A80DA789A8983 /* UIImage+Snapshot.m */; };
 		7C26203CE0278344D4A6F1110E1F5349 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F93464F5B375832F8763551FD931A1 /* UIKit.framework */; };
-		7D88998BE05C04BD7BA289684BAB2C7D /* ZZRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F8AE356DE90655D0CF683796F4FDDEE /* ZZRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E17C2B7C2A0FB6BE9F797C0701848B6 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9817C74A110FCAFBB72C4D894F911D /* FBSnapshotTestCasePlatform.m */; };
 		7E571804E4D35B42499B8BA3E59A9AA0 /* ExpectaObject+FBSnapshotTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 000047BB7E1E8140D7B2C74A3A330923 /* ExpectaObject+FBSnapshotTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F70974F7432AB5D3F166F6843A7D4AA /* AaronOC.h in Headers */ = {isa = PBXBuildFile; fileRef = E329184B5367AFCD46F02E9E63866114 /* AaronOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -195,7 +194,6 @@
 		EFEE0CA67BDA8D1262278A217868C3DF /* Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A79D03CA637757B23759EF0A44B14 /* Specta-dummy.m */; };
 		F09FCB8DAF0FF5CDCAF6AE872142922E /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ECF4B68CD96419614FCC01928BE7AB0 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F116C8ABE9A02F5D87080EAB65563F09 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F83EB6595C7B9AAE1D1B1A3BF3BEC42 /* FBSnapshotTestController.m */; };
-		F2BB303B91293A10C25921B9753ADFA3 /* ZZRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25E28EE69DAB106F357E524EAF37A5 /* ZZRouter.m */; };
 		F31CCBB90D75D9E5A83545FD95954FFA /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D510F429EA0688A435B7AE01EAB2B /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F3EDE6D241EE2A6D0992A24ACDDBAB35 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E53B23A152FCFB31E04A5BC4BD00DA /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F4591B9C7F70268A3F94B40ADDBA5202 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 91291ADAA7B00BFFAE60956D01ABE2F9 /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -346,7 +344,6 @@
 		4E1DE417FB86D3EF26B16EEE0C80B035 /* Expecta+Snapshots-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Expecta+Snapshots-Info.plist"; sourceTree = "<group>"; };
 		4E28AE7BFFFA8D110B50504208BEAF12 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
 		4ECF4B68CD96419614FCC01928BE7AB0 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		4F8AE356DE90655D0CF683796F4FDDEE /* ZZRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZZRouter.h; sourceTree = "<group>"; };
 		51574428E15B53717A339A91B5D1C466 /* UIViewController+TopMost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopMost.m"; sourceTree = "<group>"; };
 		51A8DE0FA07C133F3F9B1194A3EB7055 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
 		528C93926AC17968AF30B30D1D6731AB /* Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Specta-umbrella.h"; sourceTree = "<group>"; };
@@ -499,7 +496,6 @@
 		FE3784318F123DDD57969DC7B9FD9A6F /* Pods_AaronOC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AaronOC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7FFA6FCAFB27A7D7E44187593351F4 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
 		FEFD4A1C51CB7BA963FEFB3824AED27A /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		FF25E28EE69DAB106F357E524EAF37A5 /* ZZRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZZRouter.m; sourceTree = "<group>"; };
 		FF453CC0D321E182D58A17C8CBA7C761 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -921,8 +917,6 @@
 				D37BB464F0D2EE59A0B486E462DF094A /* Cola.m */,
 				0E5504773A670435B664B3B4AD5AD136 /* Cola+Navigator.h */,
 				65C0E213525B79C94D67EC2532CCB6C9 /* Cola+Navigator.m */,
-				4F8AE356DE90655D0CF683796F4FDDEE /* ZZRouter.h */,
-				FF25E28EE69DAB106F357E524EAF37A5 /* ZZRouter.m */,
 			);
 			name = Cola;
 			path = AaronOC/Classes/Cola;
@@ -1231,7 +1225,6 @@
 				5B9EF871D031F3B04F0F9F0FA12FCE88 /* ZZAPPInfo.h in Headers */,
 				E045248E7D7CCEE285A7B7653FFC201E /* ZZFileCache.h in Headers */,
 				EB3A2F6D90E3C0EC031852937456C8EC /* ZZMigration.h in Headers */,
-				7D88998BE05C04BD7BA289684BAB2C7D /* ZZRouter.h in Headers */,
 				453AB5C5135D3D5AD5DDE173F033EA7A /* ZZSandboxPath.h in Headers */,
 				E89F440AE4B2EB807CCF72D15EC9F7A5 /* ZZSort.h in Headers */,
 				C1E864245EF3B29E4BD07190A3E6EA52 /* ZZWeakProxy.h in Headers */,
@@ -1503,7 +1496,6 @@
 				C0C3BD2B85A5BD4E210F3E20539A41EB /* ZZAPPInfo.m in Sources */,
 				80C7AB9DC2260C5CC824BC782D1C858B /* ZZFileCache.m in Sources */,
 				966C654469BAE0E7AA2F3C133A4DE33B /* ZZMigration.m in Sources */,
-				F2BB303B91293A10C25921B9753ADFA3 /* ZZRouter.m in Sources */,
 				2C23D7C130112153F78A7072565AEEC7 /* ZZSandboxPath.m in Sources */,
 				B7ABC9F1FE249C9B4A39DBDAD7DA77EB /* ZZSort.m in Sources */,
 				CBCF077DD78FAC969A5D5A27FB35C0F9 /* ZZWeakProxy.m in Sources */,

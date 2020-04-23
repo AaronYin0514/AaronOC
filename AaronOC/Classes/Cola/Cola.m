@@ -9,11 +9,6 @@
 #import "NSString+Ext.h"
 #import "NSURL+Ext.h"
 
-ColaKey const ColaKeyUserInfo = @"com.cola.key.user.info";
-//ColaKey const ColaKeyCompletion = @"com.cola.key.completion";
-ColaKey const ColaKeyURL = @"com.cola.key.url";
-ColaKey const ColaKeyURLParameters = @"com.cola.key.url.parameters";
-
 static dispatch_queue_t cola_register_queue() {
     static dispatch_queue_t cola_register_queue;
     static dispatch_once_t cola_register_queue_once_token;
@@ -22,17 +17,6 @@ static dispatch_queue_t cola_register_queue() {
     });
     return cola_register_queue;
 }
-
-/**
-static dispatch_queue_t cola_read_queue() {
-    static dispatch_queue_t cola_read_queue;
-    static dispatch_once_t cola_read_queue_once_token;
-    dispatch_once(&cola_read_queue_once_token, ^{
-        cola_read_queue = dispatch_queue_create("com.cola.queue.read", DISPATCH_QUEUE_SERIAL);
-    });
-    return cola_read_queue;
-}
- */
 
 @interface Cola()
 

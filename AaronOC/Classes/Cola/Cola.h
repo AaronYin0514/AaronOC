@@ -7,13 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NSString * ColaKey NS_STRING_ENUM;
-
-extern ColaKey const _Nonnull ColaKeyUserInfo;
-//extern ColaKey const _Nonnull ColaKeyCompletion;
-extern ColaKey const _Nonnull ColaKeyURL;
-extern ColaKey const _Nonnull ColaKeyURLParameters;
-
 NS_ASSUME_NONNULL_BEGIN
 
 typedef id __nullable (^ColaHandler)(NSURL *url, NSDictionary *parameters, NSDictionary * __nullable userInfo);
@@ -28,8 +21,6 @@ typedef id __nullable (^ColaHandler)(NSURL *url, NSDictionary *parameters, NSDic
 #pragma mark - 属性
 
 @property (nonatomic, strong) dispatch_queue_t registerQueue;
-
-@property (nonatomic, strong) dispatch_queue_t readQueue;
 
 #pragma mark - 注册URL
 
