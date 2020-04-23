@@ -29,7 +29,6 @@
 #import "ZZAPPInfo.h"
 #import "ZZFileCache.h"
 #import "ZZMigration.h"
-#import "ZZNavigator.h"
 #import "Cola+Navigator.h"
 #import "Cola.h"
 #import "ZZRouter.h"

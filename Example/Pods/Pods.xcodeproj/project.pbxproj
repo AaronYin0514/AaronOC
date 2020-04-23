@@ -35,7 +35,6 @@
 		1CF5E91F1AE39E4CA72E7CB9DC066BC5 /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C7786CAC709CF07BC107A9FC9FFAAB /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D7AE78CACFB39440A714C4EE59B4D8C /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D213319A62A76D21D76012DCAF48325A /* SpectaDSL.m */; };
 		1EDA4657EEF6B795B643063E05E8DC57 /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E4872FB7BC2099765D4F9F6C07D54 /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1EEE1C7E8A28CA4A636D13B210B0EAAE /* ZZNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = B623C3BD161030345F35A4D04D327FF2 /* ZZNavigator.m */; };
 		1EF95F62E0BE68EB31AE64FAA807E6E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F93464F5B375832F8763551FD931A1 /* UIKit.framework */; };
 		20471DE376ACB94F0E144A26EFFCFD21 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C7A8FFE99EED14CE5E998DCA4C61FE /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		20B5AC0AF41D39808A1B2CE1C278F2BA /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D71F1A7862356212D342672332CA7F21 /* UIApplication+StrictKeyWindow.m */; };
@@ -157,7 +156,6 @@
 		B628F2BB909FBE9D533C0C6D382BAA9E /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D79EDA4D56B8968095C57292EC54534 /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B7ABC9F1FE249C9B4A39DBDAD7DA77EB /* ZZSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0C190FE5C1D0965D27FDD91C8D2C89 /* ZZSort.m */; };
 		B7D9E3E4F8FBA63B2A95B8BDDCE499AE /* GHDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1622E877BC6D3686FABA3CD4F5E7C2 /* GHDevice.m */; };
-		B8C5FA92892C1C53BE4649AD39D00C13 /* ZZNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = E918AE7AB7502B3826BE771480BC5310 /* ZZNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8F3DAB4575DE704C33DC90B136E8749 /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B80D92204FA57FEDD0BC46F4FCAC17 /* SPTTestSuite.m */; };
 		B999DEBC999F335CC8E6C471F942F93D /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = B75206D07413613FA601F23D4F7CF1BF /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C0C3BD2B85A5BD4E210F3E20539A41EB /* ZZAPPInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FA28AD75C21D14AACD4269ED3744C0 /* ZZAPPInfo.m */; };
@@ -439,7 +437,6 @@
 		B1FB5A0F244DE0DA00D92FF3 /* NSString+URL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
 		B470BB15D74EDC3BD4F164143A9EF861 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
 		B4F93464F5B375832F8763551FD931A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B623C3BD161030345F35A4D04D327FF2 /* ZZNavigator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZZNavigator.m; sourceTree = "<group>"; };
 		B67A9C7ACE52F3105259CCA3D7380DEA /* ZZFileCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZZFileCache.h; sourceTree = "<group>"; };
 		B75206D07413613FA601F23D4F7CF1BF /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
 		B882D129DE043692A5437D78E246780D /* Pods-AaronOC_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AaronOC_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -481,7 +478,6 @@
 		E6E4BAC3A8E1595D160E6B347EFE2112 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E80416032B18506139A06E3CED2F08DF /* Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Expecta.modulemap; sourceTree = "<group>"; };
 		E8713B1ED8D15C8A0523963755596AC6 /* ExpectaObject+FBSnapshotTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExpectaObject+FBSnapshotTest.m"; sourceTree = "<group>"; };
-		E918AE7AB7502B3826BE771480BC5310 /* ZZNavigator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZZNavigator.h; sourceTree = "<group>"; };
 		E92E691F17DBC2203F90E746A7636B28 /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
 		EA249BB516AFEABE360575518BF7F303 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
 		EBE02B1FC07F445E35A95A137FAA5299 /* Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Specta.xcconfig; sourceTree = "<group>"; };
@@ -652,8 +648,7 @@
 				DC95AB981E64EEE3218DF296487D2113 /* ZZAPPInfo */,
 				77E0AD61C542EE02CAE53F4F9DDBDDB0 /* ZZFileCache */,
 				023EDE5697503F8A8ADBFEDD8A23C982 /* ZZMigration */,
-				AA72B91F4605BEA4D7A595650FABC51C /* ZZNavigator */,
-				8B93B5E4FA576920F51404AA84802136 /* ZZRouter */,
+				8B93B5E4FA576920F51404AA84802136 /* Cola */,
 				A5484296C44457BFAB5B3E6E04637C71 /* ZZSandbox */,
 				F678F488A40A759AA733BB3DF506C929 /* ZZWeakProxy */,
 			);
@@ -919,7 +914,7 @@
 			path = AaronOC/Classes/Algorithm;
 			sourceTree = "<group>";
 		};
-		8B93B5E4FA576920F51404AA84802136 /* ZZRouter */ = {
+		8B93B5E4FA576920F51404AA84802136 /* Cola */ = {
 			isa = PBXGroup;
 			children = (
 				6FE2C03583BB4EE46C7605E7C40F5AD1 /* Cola.h */,
@@ -929,8 +924,8 @@
 				4F8AE356DE90655D0CF683796F4FDDEE /* ZZRouter.h */,
 				FF25E28EE69DAB106F357E524EAF37A5 /* ZZRouter.m */,
 			);
-			name = ZZRouter;
-			path = AaronOC/Classes/ZZRouter;
+			name = Cola;
+			path = AaronOC/Classes/Cola;
 			sourceTree = "<group>";
 		};
 		9487DDF193280BA42860DCE5831B83E3 /* Products */ = {
@@ -979,16 +974,6 @@
 			);
 			name = ZZSandbox;
 			path = AaronOC/Classes/ZZSandbox;
-			sourceTree = "<group>";
-		};
-		AA72B91F4605BEA4D7A595650FABC51C /* ZZNavigator */ = {
-			isa = PBXGroup;
-			children = (
-				E918AE7AB7502B3826BE771480BC5310 /* ZZNavigator.h */,
-				B623C3BD161030345F35A4D04D327FF2 /* ZZNavigator.m */,
-			);
-			name = ZZNavigator;
-			path = AaronOC/Classes/ZZNavigator;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -1246,7 +1231,6 @@
 				5B9EF871D031F3B04F0F9F0FA12FCE88 /* ZZAPPInfo.h in Headers */,
 				E045248E7D7CCEE285A7B7653FFC201E /* ZZFileCache.h in Headers */,
 				EB3A2F6D90E3C0EC031852937456C8EC /* ZZMigration.h in Headers */,
-				B8C5FA92892C1C53BE4649AD39D00C13 /* ZZNavigator.h in Headers */,
 				7D88998BE05C04BD7BA289684BAB2C7D /* ZZRouter.h in Headers */,
 				453AB5C5135D3D5AD5DDE173F033EA7A /* ZZSandboxPath.h in Headers */,
 				E89F440AE4B2EB807CCF72D15EC9F7A5 /* ZZSort.h in Headers */,
@@ -1519,7 +1503,6 @@
 				C0C3BD2B85A5BD4E210F3E20539A41EB /* ZZAPPInfo.m in Sources */,
 				80C7AB9DC2260C5CC824BC782D1C858B /* ZZFileCache.m in Sources */,
 				966C654469BAE0E7AA2F3C133A4DE33B /* ZZMigration.m in Sources */,
-				1EEE1C7E8A28CA4A636D13B210B0EAAE /* ZZNavigator.m in Sources */,
 				F2BB303B91293A10C25921B9753ADFA3 /* ZZRouter.m in Sources */,
 				2C23D7C130112153F78A7072565AEEC7 /* ZZSandboxPath.m in Sources */,
 				B7ABC9F1FE249C9B4A39DBDAD7DA77EB /* ZZSort.m in Sources */,

@@ -8,6 +8,17 @@
 
 #import "RouterViewController.h"
 #import <AaronOC/AaronOC.h>
+#import <objc/runtime.h>
+
+static NSString *isRestFulURLKey = @"URL_COLA_IsRestFulURLKey";
+
+@interface NSURL (Cola)
+
+@property (nonatomic, assign) BOOL isRestFulURL;
+
++ (nullable instancetype)URLWithRestFulRegisterString:(NSString *)URLString;
+
+@end
 
 @interface RouterViewController ()
 
@@ -23,6 +34,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
+    
+    NSString *url = @"myapp://user/<int:id>/<string:name>/<float:height>";
+    NSArray *paths = [url componentsSeparatedByString:@"/"];
+    for (NSString *path in paths) {
+        NSLog(@"%@", path);
+        if (path.length <= 2 || ![path hasPrefix:@"<"] || ![path hasSuffix:@">"] || ![path containsString:@":"]) {
+            continue;
+        }
+        NSString *str = [path substringWithRange:NSMakeRange(1, path.length - 2)];
+        NSArray *arr = [str componentsSeparatedByString:@":"];
+        if (arr.count != 2) { continue; }
+        NSString *type = arr.firstObject;
+        NSString *parameter = arr.lastObject;
+        if ([type isEqualToString:@"string"]) {
+//            NSLog(@"string类型：%@", parameter);
+        } else if ([type isEqualToString:@"int"]) {
+//            NSLog(@"int类型：%@", parameter);
+        } else if ([type isEqualToString:@"float"]) {
+//            NSLog(@"float类型：%@", parameter);
+        } else {
+//            NSLog(@"异常类型");
+        }
+    }
+    
+    NSString *url1 = @"myapp://user/1/dajiaho/10.5";
+    
+    NSURL *testURL = [NSURL URLWithString:url1];
+    
+    if (!testURL) {
+        NSLog(@"URL XXXXXXX");
+    } else {
+        NSLog(@"URL");
+    }
     
 //    [ZZRouter registerURLPattern:@"test://path1/path2/path3/name" toHandler:^(NSDictionary *routerParameters) {
 //        NSLog(@"%@", routerParameters);
@@ -150,5 +194,48 @@
 }
 
 
+
+@end
+
+@implementation NSURL (Cola)
+
+- (void)setIsRestFulURL:(BOOL)isRestFulURL {
+    objc_setAssociatedObject(self, &isRestFulURLKey, @(isRestFulURL), OBJC_ASSOCIATION_COPY);
+}
+
+- (BOOL)isRestFulURL {
+    return [objc_getAssociatedObject(self, &isRestFulURLKey) boolValue];
+}
+
++ (nullable instancetype)URLWithRestFulRegisterString:(NSString *)URLString {
+    NSArray *paths = [URLString componentsSeparatedByString:@"/"];
+    NSMutableString *newURLString = [NSMutableString string];
+    for (NSInteger idx = 0; idx < paths.count; idx++) {
+        NSString *path = paths[idx];
+        if (path.length <= 2 || ![path hasPrefix:@"<"] || ![path hasSuffix:@">"] || ![path containsString:@":"]) {
+            [newURLString appendFormat:@"%@/", path];
+            continue;
+        }
+        NSString *str = [path substringWithRange:NSMakeRange(1, path.length - 2)];
+        NSArray *arr = [str componentsSeparatedByString:@":"];
+        if (arr.count != 2) { continue; }
+        NSString *type = arr.firstObject;
+        NSString *parameter = arr.lastObject;
+        [newURLString appendString:@"__/"];
+        if ([type isEqualToString:@"string"]) {
+            NSLog(@"string类型：%@", parameter);
+        } else if ([type isEqualToString:@"int"]) {
+            NSLog(@"int类型：%@", parameter);
+        } else if ([type isEqualToString:@"float"]) {
+            NSLog(@"float类型：%@", parameter);
+        } else {
+            NSLog(@"异常类型");
+            return nil;
+        }
+    }
+    NSURL *url = [NSURL URLWithString:newURLString];
+    url.isRestFulURL = YES;
+    return url;
+}
 
 @end
