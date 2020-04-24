@@ -45,6 +45,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)showDetailURL:(NSURL *)URL withUserInfo:(nullable NSDictionary *)userInfo from:(nullable UISplitViewController *)fromSplitViewController wrap:(nullable Class)wrap sender:(nullable id)sender;
 
+#pragma mark - View Controller
+
+- (UIViewController * __nullable)viewControllerForURL:(NSURL *)URL;
+
+- (UIViewController * __nullable)viewControllerForURL:(NSURL *)URL withUserInfo:(nullable NSDictionary *)userInfo;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -29,11 +29,8 @@
 }
 
 - (void)pushURL:(NSURL *)URL withUserInfo:(NSDictionary *)userInfo from:(UINavigationController *)fromNavigationController animated:(BOOL)animated {
-    __block UIViewController *controller;
-    BOOL hasURL = [self openURL:URL withUserInfo:userInfo object:^(id obj) {
-        controller = obj;
-    }];
-    if (!hasURL || ![controller isKindOfClass:[UIViewController class]]) { return; }
+    UIViewController *controller = [self viewControllerForURL:URL withUserInfo:userInfo];
+    if (!controller) { return; }
     UINavigationController *navigationController = fromNavigationController ?: [UIViewController topMostViewController].navigationController;
     [navigationController pushViewController:controller animated:animated];
 }
@@ -51,11 +48,8 @@
 }
 
 - (void)presentURL:(NSURL *)URL withUserInfo:(nullable NSDictionary *)userInfo from:(nullable UIViewController *)fromViewController wrap:(nullable Class)wrap animated:(BOOL)flag willPresent:(BOOL (^ __nullable)(UIViewController *controller))will completion:(void (^ __nullable)(void))completion {
-    __block UIViewController *controller;
-    BOOL hasURL = [self openURL:URL withUserInfo:userInfo object:^(id obj) {
-        controller = obj;
-    }];
-    if (!hasURL || ![controller isKindOfClass:[UIViewController class]]) { return; }
+    UIViewController *controller = [self viewControllerForURL:URL withUserInfo:userInfo];
+    if (!controller) { return; }
     UIViewController *presentedViewController = fromViewController ?: [UIViewController topMostViewController];
     if (will) {
         BOOL present = will(controller);
@@ -80,11 +74,8 @@
 }
 
 - (void)showDetailURL:(NSURL *)URL withUserInfo:(NSDictionary *)userInfo from:(UISplitViewController *)fromSplitViewController wrap:(Class)wrap sender:(id)sender {
-    __block UIViewController *controller;
-    BOOL hasURL = [self openURL:URL withUserInfo:userInfo object:^(id obj) {
-        controller = obj;
-    }];
-    if (!hasURL || ![controller isKindOfClass:[UIViewController class]]) { return; }
+    UIViewController *controller = [self viewControllerForURL:URL withUserInfo:userInfo];
+    if (!controller) { return; }
     UISplitViewController *splitViewController = fromSplitViewController ?: [UIViewController topMostViewController].splitViewController;
     if (wrap && [[[wrap alloc] init] isKindOfClass:[UINavigationController class]] && ![controller isKindOfClass:[UINavigationController class]]) {
         UINavigationController *navigationController = [[wrap alloc] initWithRootViewController:controller];
@@ -92,6 +83,19 @@
     } else {
         [splitViewController showDetailViewController:controller sender:sender];
     }
+}
+
+- (UIViewController *)viewControllerForURL:(NSURL *)URL {
+    return [self viewControllerForURL:URL withUserInfo:nil];
+}
+
+- (UIViewController *)viewControllerForURL:(NSURL *)URL withUserInfo:(NSDictionary *)userInfo {
+    __block UIViewController *controller;
+    BOOL hasURL = [self openURL:URL withUserInfo:userInfo object:^(id obj) {
+        controller = obj;
+    }];
+    if (!hasURL || ![controller isKindOfClass:[UIViewController class]]) { return nil; }
+    return controller;
 }
 
 
