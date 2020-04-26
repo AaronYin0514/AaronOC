@@ -11,6 +11,8 @@
 #import <AaronOC/ZZSort.h>
 #import <AaronOC/NSData+Cryptography.h>
 #import <AaronOC/NSString+Cryptography.h>
+#import <AaronOC/NSString+Encoding.h>
+#import <AaronOC/NSData+Encoding.h>
 #import <AaronOC/NSURL+Ext.h>
 #import <AaronOC/UIViewController+TopMost.h>
 #import <AaronOC/GHDevice.h>
@@ -29,6 +31,8 @@
 #import "ZZSort.h"
 #import "NSData+Cryptography.h"
 #import "NSString+Cryptography.h"
+#import "NSString+Encoding.h"
+#import "NSData+Encoding.h"
 #import "NSURL+Ext.h"
 #import "UIViewController+TopMost.h"
 #import "GHDevice.h"

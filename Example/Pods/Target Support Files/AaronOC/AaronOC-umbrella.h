@@ -17,6 +17,8 @@
 #import "Cola.h"
 #import "NSData+Cryptography.h"
 #import "NSString+Cryptography.h"
+#import "NSData+Encoding.h"
+#import "NSString+Encoding.h"
 #import "NSString+URL.h"
 #import "NSURL+Ext.h"
 #import "UIViewController+TopMost.h"
