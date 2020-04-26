@@ -1,3 +1,13 @@
+#!/bin/bash
+
+echo "添加标签$1"
+git tag $1
+echo "添加标签$1成功!"
+
+echo "推送标签$1"
+git push origin $1
+echo "推送标签$1成功!"
+
 echo "删除本地AaronOC库"
 
 pod repo remove AaronOC
