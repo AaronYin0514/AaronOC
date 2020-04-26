@@ -15,26 +15,26 @@ typedef void (^ZZExecutionBlock)(void);
 *  指定版本，调用一次
 *
 *  @param version        指定的版本，例如: @"1.0"
-*  @param migrationBlock
+*  @param migrationBlock 回调
 */
 + (void)migrateToVersion:(NSString *)version block:(ZZExecutionBlock)migrationBlock;
 /**
  *  指定构建版本，调用一次
  *
  *  @param build          指定的构建版本，例如: @"1.0"
- *  @param migrationBlock
+ *  @param migrationBlock 回调
  */
 + (void)migrateToBuild:(NSString *)build block:(ZZExecutionBlock)migrationBlock;
 /**
  *  版本每次更新时都调用
  *
- *  @param updateBlock
+ *  @param updateBlock 回调
  */
 + (void)applicationUpdateBlock:(ZZExecutionBlock)updateBlock;
 /**
  *  构建版本每次更新时调用
  *
- *  @param updateBlock
+ *  @param updateBlock 回调
  */
 + (void)buildNumberUpdateBlock:(ZZExecutionBlock)updateBlock;
 /**

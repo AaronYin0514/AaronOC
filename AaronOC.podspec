@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AaronOC'
-  s.version          = '0.2.17'
+  s.version          = '0.2.18'
   s.summary          = 'Aaron私有库'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/AaronYin0514/AaronOC.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'AaronOC/Classes/**/*'
   
