@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class GHQueryStringPair;
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -18,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 FOUNDATION_EXPORT NSString * GHQueryStringFromParameters(NSDictionary *parameters);
 
-FOUNDATION_EXPORT NSArray * GHQueryStringPairsFromDictionary(NSDictionary *dictionary);
+FOUNDATION_EXPORT NSArray<GHQueryStringPair *> * GHQueryStringPairsFromDictionary(NSDictionary *dictionary);
 
 @interface GHQueryStringPair : NSObject
 @property (readwrite, nonatomic, strong) id field;

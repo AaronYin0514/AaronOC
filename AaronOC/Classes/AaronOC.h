@@ -24,6 +24,9 @@
 #import <AaronOC/Cola+Navigator.h>
 #import <AaronOC/ZZSandboxPath.h>
 #import <AaronOC/ZZWeakProxy.h>
+#import <AaronOC/UIImage+Ext.h>
+#import <AaronOC/UIImage+ImageFrame.h>
+#import <AaronOC/NSData+Image.h>
 
 #else
 
@@ -44,5 +47,8 @@
 #import "Cola+Navigator.h"
 #import "ZZSandboxPath.h"
 #import "ZZWeakProxy.h"
+#import "UIImage+Ext.h"
+#import "UIImage+ImageFrame.h"
+#import "NSData+Image.h"
 
 #endif

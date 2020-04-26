@@ -1,6 +1,6 @@
 {
   "name": "AaronOC",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "summary": "Aaron私有库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/AaronYin0514/AaronOC",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/AaronYin0514/AaronOC.git",
-    "tag": "0.2.16"
+    "tag": "0.2.17"
   },
   "platforms": {
     "ios": "8.0"
