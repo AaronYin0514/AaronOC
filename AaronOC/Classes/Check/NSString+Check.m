@@ -83,7 +83,7 @@
 }
 
 - (BOOL)isNumberStringByLength:(NSInteger)length {
-    NSString *regex = @"";
+    NSString *regex = [NSString stringWithFormat:@"^\\d{%ld}$", length];
     return [self checkFormatByRegex:regex];
 }
 
