@@ -13,6 +13,7 @@
 #import "AaronOC.h"
 #import "GHAlgorithm.h"
 #import "ZZSort.h"
+#import "NSString+Check.h"
 #import "Cola+Navigator.h"
 #import "Cola.h"
 #import "NSData+Cryptography.h"

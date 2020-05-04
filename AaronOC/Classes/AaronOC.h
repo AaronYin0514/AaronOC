@@ -42,6 +42,7 @@
 #import <AaronOC/NSMutableArray+Ext.h>
 #import <AaronOC/NSObject+JSON.h>
 #import <AaronOC/DTHTMLParser.h>
+#import <AaronOC/NSString+Check.h>
 
 #else
 
@@ -80,5 +81,6 @@
 #import "NSMutableArray+Ext.h"
 #import "NSObject+JSON.h"
 #import "DTHTMLParser.h"
+#import "NSString+Check.h"
 
 #endif
