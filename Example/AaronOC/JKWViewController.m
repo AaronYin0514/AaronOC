@@ -7,7 +7,7 @@
 //
 
 #import "JKWViewController.h"
-
+#import "WKWebViewController.h"
 
 @interface TestNavigationController : UINavigationController
 
@@ -31,7 +31,8 @@
     [super awakeFromNib];
     self.dataSource = @[
         @"Sort",
-        @"Router"
+        @"Router",
+        @"WebTest",
     ];
 }
 

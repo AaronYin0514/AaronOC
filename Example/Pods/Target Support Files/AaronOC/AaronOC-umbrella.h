@@ -51,6 +51,8 @@
 #import "UIImage+Crop.h"
 #import "UIImage+Ext.h"
 #import "UIImage+ImageFrame.h"
+#import "AnimationButton.h"
+#import "WKWebViewController.h"
 #import "ZZAPPInfo.h"
 #import "ZZFileCache.h"
 #import "ZZMigration.h"

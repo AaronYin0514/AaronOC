@@ -43,6 +43,8 @@
 #import <AaronOC/NSObject+JSON.h>
 #import <AaronOC/DTHTMLParser.h>
 #import <AaronOC/NSString+Check.h>
+#import <AaronOC/WKWebViewController.h>
+#import <AaronOC/AnimationButton.h>
 
 #else
 
@@ -82,5 +84,7 @@
 #import "NSObject+JSON.h"
 #import "DTHTMLParser.h"
 #import "NSString+Check.h"
+#import "WKWebViewController.h"
+#import "AnimationButton.h"
 
 #endif
