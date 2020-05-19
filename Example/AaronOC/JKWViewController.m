@@ -8,6 +8,8 @@
 
 #import "JKWViewController.h"
 #import "WKWebViewController.h"
+#import <SafariServices/SafariServices.h>
+#import "KeychainItemWrapper.h"
 
 @interface TestNavigationController : UINavigationController
 
@@ -50,15 +52,28 @@
 }
 
 - (void)testAction:(UIButton *)sender {
-    Class class = TestNavigationController.class;
-    if (class && [[[class alloc] init] isKindOfClass:[UINavigationController class]]) {
-        UIViewController *controller = [UIViewController new];
-        controller.view.backgroundColor = [UIColor greenColor];
-        UINavigationController *nav = [[class alloc] initWithRootViewController:controller];
-        [self presentViewController:nav animated:YES completion:^{
-            
-        }];
-    }
+//    Class class = TestNavigationController.class;
+//    if (class && [[[class alloc] init] isKindOfClass:[UINavigationController class]]) {
+//        UIViewController *controller = [UIViewController new];
+//        controller.view.backgroundColor = [UIColor greenColor];
+//        UINavigationController *nav = [[class alloc] initWithRootViewController:controller];
+//        [self presentViewController:nav animated:YES completion:^{
+//
+//        }];
+//    }
+    
+    
+    
+    SFSafariViewControllerConfiguration *c = [[SFSafariViewControllerConfiguration alloc] init];
+    c.entersReaderIfAvailable = YES;
+    c.barCollapsingEnabled = YES;
+    NSURL *url = [NSURL URLWithString:@"https://www.github.com"];
+    SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:url configuration:c];
+//    safariVC.delegate = self;
+    //    self.navigationController.navigationBarHidden = YES;
+    //    [self.navigationController pushViewController:safariVC animated:YES];
+        // 建议
+    [self presentViewController:safariVC animated:YES completion:nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

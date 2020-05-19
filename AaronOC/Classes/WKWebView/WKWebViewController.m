@@ -33,6 +33,7 @@
 
 @property (nonatomic, strong) UIProgressView *progressView;
 
+@property (nonatomic, strong) NSMutableArray<WKWebView *> *webViews;
 @property (nonatomic, strong) WKWebView *webView;
 
 @property (nonatomic, strong) WebViewBar *bar;

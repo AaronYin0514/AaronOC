@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self loadRequestWithURLString:@"https://www.baidu.com"];
+    [self loadRequestWithURLString:@"https://www.github.com"];
 }
 
 @end
