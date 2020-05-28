@@ -76,7 +76,16 @@
 - (void)showDetailURL:(NSURL *)URL withUserInfo:(NSDictionary *)userInfo from:(UISplitViewController *)fromSplitViewController wrap:(Class)wrap sender:(id)sender {
     UIViewController *controller = [self viewControllerForURL:URL withUserInfo:userInfo];
     if (!controller) { return; }
-    UISplitViewController *splitViewController = fromSplitViewController ?: [UIViewController topMostViewController].splitViewController;
+    UISplitViewController *splitViewController = fromSplitViewController;
+    if (!splitViewController) {
+        UIViewController *viewController = [UIViewController topMostViewController];
+        if ([viewController isKindOfClass:UISplitViewController.class]) {
+            splitViewController = (UISplitViewController *)viewController;
+        } else if (viewController.splitViewController) {
+            splitViewController = viewController.splitViewController;
+        }
+    }
+    if (!splitViewController) { return; }
     if (wrap && [[[wrap alloc] init] isKindOfClass:[UINavigationController class]] && ![controller isKindOfClass:[UINavigationController class]]) {
         UINavigationController *navigationController = [[wrap alloc] initWithRootViewController:controller];
         [splitViewController showDetailViewController:navigationController sender:sender];
