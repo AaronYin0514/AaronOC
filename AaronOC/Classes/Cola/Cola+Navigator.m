@@ -35,6 +35,10 @@
     [navigationController pushViewController:controller animated:animated];
 }
 
+- (void)presentURL:(NSURL *)URL {
+    [self presentURL:URL completion:nil];
+}
+
 - (void)presentURL:(NSURL *)URL completion:(void (^)(void))completion {
     [self presentURL:URL withUserInfo:nil completion:completion];
 }
