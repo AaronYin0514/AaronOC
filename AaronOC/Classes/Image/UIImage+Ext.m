@@ -155,4 +155,125 @@
     return frameDuration;
 }
 
+#pragma mark - Orientation(图片方向)
+
+// Convert an EXIF image orientation to an iOS one.
++ (UIImageOrientation)imageOrientationFromEXIFOrientation:(CGImagePropertyOrientation)exifOrientation {
+    UIImageOrientation imageOrientation = UIImageOrientationUp;
+    switch (exifOrientation) {
+        case kCGImagePropertyOrientationUp:
+            imageOrientation = UIImageOrientationUp;
+            break;
+        case kCGImagePropertyOrientationDown:
+            imageOrientation = UIImageOrientationDown;
+            break;
+        case kCGImagePropertyOrientationLeft:
+            imageOrientation = UIImageOrientationLeft;
+            break;
+        case kCGImagePropertyOrientationRight:
+            imageOrientation = UIImageOrientationRight;
+            break;
+        case kCGImagePropertyOrientationUpMirrored:
+            imageOrientation = UIImageOrientationUpMirrored;
+            break;
+        case kCGImagePropertyOrientationDownMirrored:
+            imageOrientation = UIImageOrientationDownMirrored;
+            break;
+        case kCGImagePropertyOrientationLeftMirrored:
+            imageOrientation = UIImageOrientationLeftMirrored;
+            break;
+        case kCGImagePropertyOrientationRightMirrored:
+            imageOrientation = UIImageOrientationRightMirrored;
+            break;
+        default:
+            break;
+    }
+    return imageOrientation;
+}
+
+// Convert an iOS orientation to an EXIF image orientation.
++ (CGImagePropertyOrientation)exifOrientationFromImageOrientation:(UIImageOrientation)imageOrientation {
+    CGImagePropertyOrientation exifOrientation = kCGImagePropertyOrientationUp;
+    switch (imageOrientation) {
+        case UIImageOrientationUp:
+            exifOrientation = kCGImagePropertyOrientationUp;
+            break;
+        case UIImageOrientationDown:
+            exifOrientation = kCGImagePropertyOrientationDown;
+            break;
+        case UIImageOrientationLeft:
+            exifOrientation = kCGImagePropertyOrientationLeft;
+            break;
+        case UIImageOrientationRight:
+            exifOrientation = kCGImagePropertyOrientationRight;
+            break;
+        case UIImageOrientationUpMirrored:
+            exifOrientation = kCGImagePropertyOrientationUpMirrored;
+            break;
+        case UIImageOrientationDownMirrored:
+            exifOrientation = kCGImagePropertyOrientationDownMirrored;
+            break;
+        case UIImageOrientationLeftMirrored:
+            exifOrientation = kCGImagePropertyOrientationLeftMirrored;
+            break;
+        case UIImageOrientationRightMirrored:
+            exifOrientation = kCGImagePropertyOrientationRightMirrored;
+            break;
+        default:
+            break;
+    }
+    return exifOrientation;
+}
+
 @end
+
+static inline CGAffineTransform CGContextTransformFromOrientation(CGImagePropertyOrientation orientation, CGSize size) {
+    // Inspiration from @libfeihu
+    // We need to calculate the proper transformation to make the image upright.
+    // We do it in 2 steps: Rotate if Left/Right/Down, and then flip if Mirrored.
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    
+    switch (orientation) {
+        case kCGImagePropertyOrientationDown:
+        case kCGImagePropertyOrientationDownMirrored:
+            transform = CGAffineTransformTranslate(transform, size.width, size.height);
+            transform = CGAffineTransformRotate(transform, M_PI);
+            break;
+            
+        case kCGImagePropertyOrientationLeft:
+        case kCGImagePropertyOrientationLeftMirrored:
+            transform = CGAffineTransformTranslate(transform, size.width, 0);
+            transform = CGAffineTransformRotate(transform, M_PI_2);
+            break;
+            
+        case kCGImagePropertyOrientationRight:
+        case kCGImagePropertyOrientationRightMirrored:
+            transform = CGAffineTransformTranslate(transform, 0, size.height);
+            transform = CGAffineTransformRotate(transform, -M_PI_2);
+            break;
+        case kCGImagePropertyOrientationUp:
+        case kCGImagePropertyOrientationUpMirrored:
+            break;
+    }
+    
+    switch (orientation) {
+        case kCGImagePropertyOrientationUpMirrored:
+        case kCGImagePropertyOrientationDownMirrored:
+            transform = CGAffineTransformTranslate(transform, size.width, 0);
+            transform = CGAffineTransformScale(transform, -1, 1);
+            break;
+            
+        case kCGImagePropertyOrientationLeftMirrored:
+        case kCGImagePropertyOrientationRightMirrored:
+            transform = CGAffineTransformTranslate(transform, size.height, 0);
+            transform = CGAffineTransformScale(transform, -1, 1);
+            break;
+        case kCGImagePropertyOrientationUp:
+        case kCGImagePropertyOrientationDown:
+        case kCGImagePropertyOrientationLeft:
+        case kCGImagePropertyOrientationRight:
+            break;
+    }
+    
+    return transform;
+}

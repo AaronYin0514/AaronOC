@@ -29,6 +29,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIImage *)fetchAnimatedImageWithSource:(CGImageSourceRef)source scale:(CGFloat)scale;
 
+#pragma mark - Orientation(图片方向)
+
+/**
+ Convert an EXIF image orientation to an iOS one.
+
+ @param exifOrientation EXIF orientation
+ @return iOS orientation
+ */
++ (UIImageOrientation)imageOrientationFromEXIFOrientation:(CGImagePropertyOrientation)exifOrientation;
+
+/**
+ Convert an iOS orientation to an EXIF image orientation.
+
+ @param imageOrientation iOS orientation
+ @return EXIF orientation
+ */
++ (CGImagePropertyOrientation)exifOrientationFromImageOrientation:(UIImageOrientation)imageOrientation;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
