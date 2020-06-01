@@ -29,7 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Present
 
-- (void)presentURL:(NSURL *)URL completion:(void (^)(void))completion;
+- (void)presentURL:(NSURL *)URL;
+
+- (void)presentURL:(NSURL *)URL completion:(void (^ __nullable)(void))completion;
 
 - (void)presentURL:(NSURL *)URL withUserInfo:(nullable NSDictionary *)userInfo completion:(void (^ __nullable)(void))completion;
 

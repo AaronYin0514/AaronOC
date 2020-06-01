@@ -25,6 +25,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B160C9E1244B4E180074B87F /* NavigatorTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B160C9E0244B4E180074B87F /* NavigatorTestViewController.m */; };
 		B1664DAF2442CBCC00C551C4 /* RouterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1664DAE2442CBCC00C551C4 /* RouterViewController.m */; };
+		B167557C246C29CB00B847D9 /* WebTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B167557B246C29CB00B847D9 /* WebTestViewController.m */; };
 		B1D29ACD2403E97A0016CC89 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D29ACC2403E97A0016CC89 /* SortViewController.m */; };
 		F37BA6A49A84ED2C1B1BA1AB /* Pods_AaronOC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D6C00F927979F132A69BDF /* Pods_AaronOC_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,8 @@
 		B160C9E0244B4E180074B87F /* NavigatorTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigatorTestViewController.m; sourceTree = "<group>"; };
 		B1664DAD2442CBCC00C551C4 /* RouterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterViewController.h; sourceTree = "<group>"; };
 		B1664DAE2442CBCC00C551C4 /* RouterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterViewController.m; sourceTree = "<group>"; };
+		B167557A246C29CB00B847D9 /* WebTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebTestViewController.h; sourceTree = "<group>"; };
+		B167557B246C29CB00B847D9 /* WebTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebTestViewController.m; sourceTree = "<group>"; };
 		B18A07CDE4942A7FA43A466C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B1D29ACB2403E97A0016CC89 /* SortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
 		B1D29ACC2403E97A0016CC89 /* SortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 				B1664DAE2442CBCC00C551C4 /* RouterViewController.m */,
 				B160C9DF244B4E180074B87F /* NavigatorTestViewController.h */,
 				B160C9E0244B4E180074B87F /* NavigatorTestViewController.m */,
+				B167557A246C29CB00B847D9 /* WebTestViewController.h */,
+				B167557B246C29CB00B847D9 /* WebTestViewController.m */,
 			);
 			name = Moduls;
 			sourceTree = "<group>";
@@ -415,6 +420,7 @@
 				B160C9E1244B4E180074B87F /* NavigatorTestViewController.m in Sources */,
 				6003F59E195388D20070C39A /* JKWAppDelegate.m in Sources */,
 				B1664DAF2442CBCC00C551C4 /* RouterViewController.m in Sources */,
+				B167557C246C29CB00B847D9 /* WebTestViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* JKWViewController.m in Sources */,
 				B1D29ACD2403E97A0016CC89 /* SortViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
