@@ -37,7 +37,7 @@
     }
     if ([controller isKindOfClass:[UIPageViewController class]]) {
         if (((UIPageViewController *)controller).viewControllers.count == 1) {
-            return [self topMostForViewController:controller.presentedViewController];
+            return [self topMostForViewController:((UIPageViewController *)controller).viewControllers.firstObject];
         }
     }
     for (UIView *subview in controller.view.subviews) {
