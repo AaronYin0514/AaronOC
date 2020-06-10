@@ -180,6 +180,23 @@
 		B10AA4E9246D779A00EC65BF /* SafariViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B10AA4E7246D779A00EC65BF /* SafariViewController.h */; };
 		B10AA4EA246D779A00EC65BF /* SafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10AA4E8246D779A00EC65BF /* SafariViewController.m */; };
 		B13EE639D1C97C61AF2C9D23E26F35F3 /* Cola.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE6AAED547EC491D4F758972F4B41B8 /* Cola.m */; };
+		B1983C3724911FEF002E0720 /* MMMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = B1983C2424911FEF002E0720 /* MMMarkdown.m */; };
+		B1983C3824911FEF002E0720 /* MMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1983C2524911FEF002E0720 /* MMParser.m */; };
+		B1983C3A24911FEF002E0720 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B1983C2724911FEF002E0720 /* MMDocument.m */; };
+		B1983C3B24911FEF002E0720 /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1983C2824911FEF002E0720 /* MMSpanParser.m */; };
+		B1983C3C24911FEF002E0720 /* MMGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = B1983C2924911FEF002E0720 /* MMGenerator.h */; };
+		B1983C3D24911FEF002E0720 /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B1983C2A24911FEF002E0720 /* MMScanner.m */; };
+		B1983C3E24911FEF002E0720 /* MMHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B1983C2B24911FEF002E0720 /* MMHTMLParser.h */; };
+		B1983C3F24911FEF002E0720 /* MMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B1983C2C24911FEF002E0720 /* MMElement.m */; };
+		B1983C4024911FEF002E0720 /* MMDocument_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B1983C2D24911FEF002E0720 /* MMDocument_Private.h */; };
+		B1983C4124911FEF002E0720 /* MMMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = B1983C2E24911FEF002E0720 /* MMMarkdown.h */; };
+		B1983C4224911FEF002E0720 /* MMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B1983C2F24911FEF002E0720 /* MMParser.h */; };
+		B1983C4324911FEF002E0720 /* MMElement.h in Headers */ = {isa = PBXBuildFile; fileRef = B1983C3024911FEF002E0720 /* MMElement.h */; };
+		B1983C4424911FEF002E0720 /* MMScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = B1983C3124911FEF002E0720 /* MMScanner.h */; };
+		B1983C4524911FEF002E0720 /* MMHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1983C3224911FEF002E0720 /* MMHTMLParser.m */; };
+		B1983C4624911FEF002E0720 /* MMGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1983C3324911FEF002E0720 /* MMGenerator.m */; };
+		B1983C4724911FEF002E0720 /* MMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = B1983C3424911FEF002E0720 /* MMDocument.h */; };
+		B1983C4824911FEF002E0720 /* MMSpanParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B1983C3524911FEF002E0720 /* MMSpanParser.h */; };
 		B24C0951E730C8D7B6539598555A0126 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = E224127079617AF4A8E6130FD9E4BACC /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B2600C25CA1638A2D5106A1DD1FA7777 /* UIImage+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = D2190269B533065581F10DBABFF9C619 /* UIImage+Ext.m */; };
 		B2B5271CE555182511BFDAA78A16085D /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEAD0DA889C257A0A105B8A594D0BE /* SPTExample.m */; };
@@ -521,6 +538,23 @@
 		AEE712118916A6FAD1200C110E308E2D /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
 		B10AA4E7246D779A00EC65BF /* SafariViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariViewController.h; sourceTree = "<group>"; };
 		B10AA4E8246D779A00EC65BF /* SafariViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariViewController.m; sourceTree = "<group>"; };
+		B1983C2424911FEF002E0720 /* MMMarkdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMarkdown.m; sourceTree = "<group>"; };
+		B1983C2524911FEF002E0720 /* MMParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMParser.m; sourceTree = "<group>"; };
+		B1983C2724911FEF002E0720 /* MMDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDocument.m; sourceTree = "<group>"; };
+		B1983C2824911FEF002E0720 /* MMSpanParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSpanParser.m; sourceTree = "<group>"; };
+		B1983C2924911FEF002E0720 /* MMGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGenerator.h; sourceTree = "<group>"; };
+		B1983C2A24911FEF002E0720 /* MMScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMScanner.m; sourceTree = "<group>"; };
+		B1983C2B24911FEF002E0720 /* MMHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHTMLParser.h; sourceTree = "<group>"; };
+		B1983C2C24911FEF002E0720 /* MMElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMElement.m; sourceTree = "<group>"; };
+		B1983C2D24911FEF002E0720 /* MMDocument_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDocument_Private.h; sourceTree = "<group>"; };
+		B1983C2E24911FEF002E0720 /* MMMarkdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMarkdown.h; sourceTree = "<group>"; };
+		B1983C2F24911FEF002E0720 /* MMParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMParser.h; sourceTree = "<group>"; };
+		B1983C3024911FEF002E0720 /* MMElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMElement.h; sourceTree = "<group>"; };
+		B1983C3124911FEF002E0720 /* MMScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMScanner.h; sourceTree = "<group>"; };
+		B1983C3224911FEF002E0720 /* MMHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHTMLParser.m; sourceTree = "<group>"; };
+		B1983C3324911FEF002E0720 /* MMGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGenerator.m; sourceTree = "<group>"; };
+		B1983C3424911FEF002E0720 /* MMDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDocument.h; sourceTree = "<group>"; };
+		B1983C3524911FEF002E0720 /* MMSpanParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSpanParser.h; sourceTree = "<group>"; };
 		B27768910D2C1161F4A5C8536DA18BEE /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		B443945AE263CA8D50F93668F6CCA9A8 /* ZZSandboxPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZZSandboxPath.m; sourceTree = "<group>"; };
 		B4F93464F5B375832F8763551FD931A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -782,6 +816,7 @@
 		2FD35C82B2463358F04140A9782BC34E /* AaronOC */ = {
 			isa = PBXGroup;
 			children = (
+				B1983C2324911FEF002E0720 /* Markdown */,
 				A322054BADE055B6A2D97606BB781AF3 /* AaronOC.h */,
 				751981902B2CB1FD2B26C6885C82F709 /* Algorithm */,
 				A038CF67DA7113A873B8F9CD6F0F1835 /* Check */,
@@ -798,7 +833,7 @@
 				ACB004A9F2C837101109FB74D2FE48DF /* UI */,
 				2C367834AB4BC7556EC92FB5483C9B06 /* WKWebView */,
 				D105F9462CE6492F6C405A4DCD5A4532 /* ZZAPPInfo */,
-				5661A1F0688D194774C42C1A8FBA3EE8 /* ZZFileCache */,
+				5661A1F0688D194774C42C1A8FBA3EE8 /* ZZCache */,
 				0021994CC6BE52BFEF5010686E66E36D /* ZZMigration */,
 				47EF80CD01DED5033E7C16EFC8099103 /* ZZSandbox */,
 				C036CA0E7655D49595A7DAFC984118E8 /* ZZWeakProxy */,
@@ -886,14 +921,14 @@
 			path = AaronOC/Classes/Cola;
 			sourceTree = "<group>";
 		};
-		5661A1F0688D194774C42C1A8FBA3EE8 /* ZZFileCache */ = {
+		5661A1F0688D194774C42C1A8FBA3EE8 /* ZZCache */ = {
 			isa = PBXGroup;
 			children = (
 				8CA39309682F08293AF41AC8AD2CDE87 /* ZZFileCache.h */,
 				13EB88545C2C3EF3B53523D6805EA329 /* ZZFileCache.m */,
 			);
-			name = ZZFileCache;
-			path = AaronOC/Classes/ZZFileCache;
+			name = ZZCache;
+			path = AaronOC/Classes/ZZCache;
 			sourceTree = "<group>";
 		};
 		5D27235762915B5472752AC31E62C4EE /* Pods-AaronOC_Example */ = {
@@ -1165,6 +1200,31 @@
 			path = AaronOC/Classes/UI;
 			sourceTree = "<group>";
 		};
+		B1983C2324911FEF002E0720 /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+				B1983C2E24911FEF002E0720 /* MMMarkdown.h */,
+				B1983C2424911FEF002E0720 /* MMMarkdown.m */,
+				B1983C2F24911FEF002E0720 /* MMParser.h */,
+				B1983C2524911FEF002E0720 /* MMParser.m */,
+				B1983C3424911FEF002E0720 /* MMDocument.h */,
+				B1983C2724911FEF002E0720 /* MMDocument.m */,
+				B1983C3524911FEF002E0720 /* MMSpanParser.h */,
+				B1983C2824911FEF002E0720 /* MMSpanParser.m */,
+				B1983C2924911FEF002E0720 /* MMGenerator.h */,
+				B1983C3324911FEF002E0720 /* MMGenerator.m */,
+				B1983C3124911FEF002E0720 /* MMScanner.h */,
+				B1983C2A24911FEF002E0720 /* MMScanner.m */,
+				B1983C3024911FEF002E0720 /* MMElement.h */,
+				B1983C2C24911FEF002E0720 /* MMElement.m */,
+				B1983C2B24911FEF002E0720 /* MMHTMLParser.h */,
+				B1983C3224911FEF002E0720 /* MMHTMLParser.m */,
+				B1983C2D24911FEF002E0720 /* MMDocument_Private.h */,
+			);
+			name = Markdown;
+			path = AaronOC/Classes/Markdown;
+			sourceTree = "<group>";
+		};
 		B5B89E42258BE32A66C75CB2AB3C6E1D /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
@@ -1408,10 +1468,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1983C3E24911FEF002E0720 /* MMHTMLParser.h in Headers */,
+				B1983C4824911FEF002E0720 /* MMSpanParser.h in Headers */,
 				C44DDF23BD67A50BF402A4A99541DB03 /* AaronOC-umbrella.h in Headers */,
 				DBB4451A3FCE97757E79E39D728B5089 /* AaronOC.h in Headers */,
 				794A1EAAEAB174E95AAD4DF4206EE93E /* AnimationButton.h in Headers */,
 				40A11E4E5889BC98CB2093D675F1925E /* CALayer+Ext.h in Headers */,
+				B1983C4324911FEF002E0720 /* MMElement.h in Headers */,
 				28FD69BF6F4C213190CF2409A3221136 /* Cola+Navigator.h in Headers */,
 				FB1D8CA77BB349536961A267D9C2C6BB /* Cola.h in Headers */,
 				F5CE07B590648F97667505A9A8FB8CEC /* DTHTMLParser.h in Headers */,
@@ -1421,6 +1484,7 @@
 				9BAF812A7EA6BE3FFC39583F358E02F9 /* GHDevice.h in Headers */,
 				831867F6313161F4F06A27FFC5EDD157 /* GHHTTPSessionManager.h in Headers */,
 				5E29ED8F2033CCA59C5884E3333E444E /* GHNetworking.h in Headers */,
+				B1983C4424911FEF002E0720 /* MMScanner.h in Headers */,
 				8EC923B053A34416C30E86131D14B358 /* GHNetworkReachabilityManager.h in Headers */,
 				A5E2555D42EB445A67FFD1BF2CFFF986 /* GHSecurityPolicy.h in Headers */,
 				C2466D4037EEC595C768B8514F5BFD61 /* GHURLRequestSerialization.h in Headers */,
@@ -1430,12 +1494,14 @@
 				33C1782B83879AB25097BFF016BF8E5C /* NSData+Encoding.h in Headers */,
 				9E960EA963BD3D33DB9575C51F697CF4 /* NSData+Image.h in Headers */,
 				B6784C040D9D244F3D0AA839DAFB4337 /* NSDate+Ext.h in Headers */,
+				B1983C4224911FEF002E0720 /* MMParser.h in Headers */,
 				C49E29411DA1CC4860AC2990E0E09702 /* NSDictionary+Ext.h in Headers */,
 				BA5A433A804C46B7B96C0C3EAEEA04F9 /* NSIndexSet+Ext.h in Headers */,
 				DED8AD196799A974543367682994D5E3 /* NSMutableArray+Ext.h in Headers */,
 				2C43EFA9FF87E9589B24994467B865E0 /* NSObject+JSON.h in Headers */,
 				71A112C411FE6EC75107B19F1264C4B9 /* NSSet+Ext.h in Headers */,
 				ACCEB7718AEEDCC58AE926B2126830D9 /* NSString+Check.h in Headers */,
+				B1983C4124911FEF002E0720 /* MMMarkdown.h in Headers */,
 				FF0B06E367D0D5DC5705CC3AF5BFCD33 /* NSString+Cryptography.h in Headers */,
 				C37B3716FBFED426E056805E344047FC /* NSString+Encoding.h in Headers */,
 				84FEF9EED5F8DE2243946EFA4DED68BD /* NSString+Ext.h in Headers */,
@@ -1448,7 +1514,9 @@
 				0AB6BC257C57DCA43969BFACB9F4C3D9 /* UIImage+Ext.h in Headers */,
 				2B8AB6FFA2C6C471D2310AC65D7F463E /* UIImage+ImageFrame.h in Headers */,
 				1497A1D864FA46A1266A063139D76C79 /* UIPasteboard+Ext.h in Headers */,
+				B1983C3C24911FEF002E0720 /* MMGenerator.h in Headers */,
 				526C26613129829C9794CFE1EC8C6314 /* UITableView+Ext.h in Headers */,
+				B1983C4024911FEF002E0720 /* MMDocument_Private.h in Headers */,
 				A4DE5CF9D6056AC3435DB73EF16306C8 /* UIView+Ext.h in Headers */,
 				720EF04949EADC61A47413416B03D463 /* UIViewController+TopMost.h in Headers */,
 				18738A82C708D2F07ADDC54E177AED77 /* WKWebViewController.h in Headers */,
@@ -1456,6 +1524,7 @@
 				C7E422BF78B9074222767B7297EF20F9 /* ZZFileCache.h in Headers */,
 				C578CB2592FFF83684B11D1A69FFC424 /* ZZMigration.h in Headers */,
 				756AC7DC08ABE29F6014E35C3C2B6679 /* ZZSandboxPath.h in Headers */,
+				B1983C4724911FEF002E0720 /* MMDocument.h in Headers */,
 				272F60068EFD5E441C5164D6EEB581CE /* ZZSort.h in Headers */,
 				81F916ADE7532DD98F2A4CFACDFF83F0 /* ZZWeakProxy.h in Headers */,
 			);
@@ -1739,10 +1808,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DE01A6D8F8022C23F45CBC8A90979B9 /* AaronOC-dummy.m in Sources */,
+				B1983C3A24911FEF002E0720 /* MMDocument.m in Sources */,
 				9D9EEA36ED3DE6201D6A50BEC15CF01A /* AnimationButton.m in Sources */,
 				F65512BDC2EB30E6F22157599F78EA34 /* CALayer+Ext.m in Sources */,
 				4630CEBB87B75CCCD85ABCFA3DAB18BB /* Cola+Navigator.m in Sources */,
 				B13EE639D1C97C61AF2C9D23E26F35F3 /* Cola.m in Sources */,
+				B1983C3B24911FEF002E0720 /* MMSpanParser.m in Sources */,
 				7B4498DE5F5B9AFD932DF34D9D668BEF /* DTHTMLParser.m in Sources */,
 				59B0234A3144402C88B596AB3274C57B /* GHAlgorithm.m in Sources */,
 				A7EC46E8A70DFB70004E3D549C542AA2 /* GHDevice.m in Sources */,
@@ -1756,8 +1827,10 @@
 				3733BB010D661EF68D677D8B650F88F8 /* NSData+Cryptography.m in Sources */,
 				6157E640782EB60C19D0F06F546F94A1 /* NSData+Encoding.m in Sources */,
 				392BC2FB39C5879BDF401D7010E046CC /* NSData+Image.m in Sources */,
+				B1983C3D24911FEF002E0720 /* MMScanner.m in Sources */,
 				2026733B0071F0E57271A94E2AE66C9C /* NSDate+Ext.m in Sources */,
 				8C56F8115FF61E2ECD54CB335D47F798 /* NSDictionary+Ext.m in Sources */,
+				B1983C4624911FEF002E0720 /* MMGenerator.m in Sources */,
 				54B755F28DD5A68A12907F7807F371DB /* NSIndexSet+Ext.m in Sources */,
 				85E0FB03286008C3F3E41DB64BE8C2F9 /* NSMutableArray+Ext.m in Sources */,
 				265969D63EAC6E7E038B82A88BB299C4 /* NSObject+JSON.m in Sources */,
@@ -1765,7 +1838,9 @@
 				A61A1DF45800870481B6756D690B432F /* NSString+Check.m in Sources */,
 				F2EA6BADC89C727EDA0567C2E8A8EA8F /* NSString+Cryptography.m in Sources */,
 				16F3856DD0AB5D0048C5007FDF748004 /* NSString+Encoding.m in Sources */,
+				B1983C3F24911FEF002E0720 /* MMElement.m in Sources */,
 				472F3ECD69484FAED41B3B417F34DC8B /* NSString+Ext.m in Sources */,
+				B1983C3724911FEF002E0720 /* MMMarkdown.m in Sources */,
 				C98B2CAD4F2EC05544C6664F7965F663 /* NSString+URL.m in Sources */,
 				F53023AD02409DE0DA43ED236E4A45EA /* NSURL+Ext.m in Sources */,
 				0CFCBFE93FC264C87832DD6FEC9FEDB9 /* UIApplication+Communication.m in Sources */,
@@ -1773,6 +1848,7 @@
 				C952FD3137377AB1C8DD6ADCBD1D2E00 /* UIImage+Crop.m in Sources */,
 				B2600C25CA1638A2D5106A1DD1FA7777 /* UIImage+Ext.m in Sources */,
 				2548FF86F39BB8A7366914C986360925 /* UIImage+ImageFrame.m in Sources */,
+				B1983C4524911FEF002E0720 /* MMHTMLParser.m in Sources */,
 				83C316CF01CE0290F40716EA1937B569 /* UIPasteboard+Ext.m in Sources */,
 				9555CCBD633CC94AF10B2417A0DEEADD /* UITableView+Ext.m in Sources */,
 				331FCF8E93C235339A144D3450091346 /* UIView+Ext.m in Sources */,
@@ -1781,6 +1857,7 @@
 				654C231543BADB222286A7664AE5F3FA /* ZZAPPInfo.m in Sources */,
 				743D06C7C15EBD8CEB5E5CFA86BC39D1 /* ZZFileCache.m in Sources */,
 				D00D7AFEE2376DEF1490E0D97DE0C2F7 /* ZZMigration.m in Sources */,
+				B1983C3824911FEF002E0720 /* MMParser.m in Sources */,
 				C11E1BF38D4935698F5DB86E6F82390E /* ZZSandboxPath.m in Sources */,
 				844A56B0E307B3F7E286C316805AFAA4 /* ZZSort.m in Sources */,
 				C1E097E42573AD1949C21AB7FB0F6131 /* ZZWeakProxy.m in Sources */,
