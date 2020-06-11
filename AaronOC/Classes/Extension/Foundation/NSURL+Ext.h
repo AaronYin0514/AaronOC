@@ -11,6 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSURL (Ext)
 
+#pragma mark - 初始化
+
++ (nullable instancetype)URLWithStringFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
+
+#pragma mark - API
+
 @property (nullable, readonly, copy) NSString *apiString;
 
 - (NSURL *)addParameter:(NSString *)parameter forKey:(NSString *)aKey;
