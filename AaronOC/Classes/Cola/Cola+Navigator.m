@@ -6,7 +6,6 @@
 //
 
 #import "Cola+Navigator.h"
-#import "UIViewController+TopMost.h"
 
 @implementation Cola (Navigator)
 
@@ -31,7 +30,7 @@
 - (void)pushURL:(NSURL *)URL withUserInfo:(NSDictionary *)userInfo from:(UINavigationController *)fromNavigationController animated:(BOOL)animated {
     UIViewController *controller = [self viewControllerForURL:URL withUserInfo:userInfo];
     if (!controller) { return; }
-    UINavigationController *navigationController = fromNavigationController ?: [UIViewController topMostViewController].navigationController;
+    UINavigationController *navigationController = fromNavigationController ?: [UIViewController topMostViewControllerWithUserInfo:userInfo].navigationController;
     [navigationController pushViewController:controller animated:animated];
 }
 
@@ -54,7 +53,7 @@
 - (void)presentURL:(NSURL *)URL withUserInfo:(nullable NSDictionary *)userInfo from:(nullable UIViewController *)fromViewController wrap:(nullable Class)wrap animated:(BOOL)flag willPresent:(BOOL (^ __nullable)(UIViewController *controller))will completion:(void (^ __nullable)(void))completion {
     UIViewController *controller = [self viewControllerForURL:URL withUserInfo:userInfo];
     if (!controller) { return; }
-    UIViewController *presentedViewController = fromViewController ?: [UIViewController topMostViewController];
+    UIViewController *presentedViewController = fromViewController ?: [UIViewController topMostViewControllerWithUserInfo:userInfo];
     if (will) {
         BOOL present = will(controller);
         if (!present) {
@@ -82,7 +81,7 @@
     if (!controller) { return; }
     UISplitViewController *splitViewController = fromSplitViewController;
     if (!splitViewController) {
-        UIViewController *viewController = [UIViewController topMostViewController];
+        UIViewController *viewController = [UIViewController topMostViewControllerWithUserInfo:userInfo];
         if ([viewController isKindOfClass:UISplitViewController.class]) {
             splitViewController = (UISplitViewController *)viewController;
         } else if (viewController.splitViewController) {
