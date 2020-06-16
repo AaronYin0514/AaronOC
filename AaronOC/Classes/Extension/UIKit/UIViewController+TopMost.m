@@ -36,13 +36,13 @@ UITopMostControllerKey const UITopMostControllerKeyFromController = @"UITopMostC
         if (userInfo && userInfo[UITopMostControllerKeySplitIndex]) {
             index = [userInfo[UITopMostControllerKeySplitIndex] integerValue];
         }
-        UIViewController *controller;
+        UIViewController *vc;
         if (index >= 0 && index < ((UISplitViewController *)controller).viewControllers.count) {
-            controller = ((UISplitViewController *)controller).viewControllers[index];
+            vc = ((UISplitViewController *)controller).viewControllers[index];
         } else {
-            controller = ((UISplitViewController *)controller).viewControllers.lastObject;
+            vc = ((UISplitViewController *)controller).viewControllers.lastObject;
         }
-        return [self topMostForViewController:controller userInfo:userInfo];
+        return [self topMostForViewController:vc userInfo:userInfo];
     }
     if (controller.presentedViewController != nil) {
         return [self topMostForViewController:controller.presentedViewController userInfo:userInfo];
