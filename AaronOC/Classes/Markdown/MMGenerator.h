@@ -31,6 +31,8 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface MMGenerator : NSObject
 
+@property (nonatomic, strong, nullable) NSString *imgClick;
+
 - (NSString *)generateHTML:(MMDocument *)aDocument;
 
 @end

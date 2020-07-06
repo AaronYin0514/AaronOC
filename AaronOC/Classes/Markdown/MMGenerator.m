@@ -78,7 +78,7 @@ static NSString *__obfuscatedEmailAddress(NSString *anAddress)
     return result;
 }
 
-static NSString * __HTMLStartTagForElement(MMElement *anElement)
+static NSString * __HTMLStartTagForElement(MMElement *anElement, NSString *imgClick)
 {
     switch (anElement.type)
     {
@@ -108,17 +108,27 @@ static NSString * __HTMLStartTagForElement(MMElement *anElement)
             return @"<em>";
         case MMElementTypeCodeSpan:
             return @"<code>";
-        case MMElementTypeImage:
-            if (anElement.title != nil)
-            {
-                return [NSString stringWithFormat:@"<img src=\"%@\" alt=\"%@\" title=\"%@\" />",
-                        __HTMLEscapedString(anElement.href),
-                        __HTMLEscapedString(anElement.stringValue),
-                        __HTMLEscapedString(anElement.title)];
+        case MMElementTypeImage: {
+            NSString *imgLabel = [NSString stringWithFormat:@"<img src=\"%@\" alt=\"%@\"", __HTMLEscapedString(anElement.href), __HTMLEscapedString(anElement.stringValue)];
+            if (anElement.title != nil) {
+                imgLabel = [imgLabel stringByAppendingFormat:@" title=\"%@\"", __HTMLEscapedString(anElement.title)];
             }
-            return [NSString stringWithFormat:@"<img src=\"%@\" alt=\"%@\" />",
-                    __HTMLEscapedString(anElement.href),
-                    __HTMLEscapedString(anElement.stringValue)];
+            if (imgClick.length) {
+                imgLabel = [imgLabel stringByAppendingFormat:@" onclick=\"%@\"", __HTMLEscapedString(imgClick)];
+            }
+            imgLabel = [imgLabel stringByAppendingString:@" />"];
+            return imgLabel;
+        }
+//            if (anElement.title != nil)
+//            {
+//                return [NSString stringWithFormat:@"<img src=\"%@\" alt=\"%@\" title=\"%@\" />",
+//                        __HTMLEscapedString(anElement.href),
+//                        __HTMLEscapedString(anElement.stringValue),
+//                        __HTMLEscapedString(anElement.title)];
+//            }
+//            return [NSString stringWithFormat:@"<img src=\"%@\" alt=\"%@\" />",
+//                    __HTMLEscapedString(anElement.href),
+//                    __HTMLEscapedString(anElement.stringValue)];
         case MMElementTypeLink:
             if (anElement.title != nil)
             {
@@ -241,7 +251,7 @@ static NSString * __HTMLEndTagForElement(MMElement *anElement)
                            HTML:(NSMutableString *)theHTML
                        location:(NSUInteger *)aLocation
 {
-    NSString *startTag = __HTMLStartTagForElement(anElement);
+    NSString *startTag = __HTMLStartTagForElement(anElement, self.imgClick);
     NSString *endTag   = __HTMLEndTagForElement(anElement);
     
     if (startTag)

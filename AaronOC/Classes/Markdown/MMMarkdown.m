@@ -51,6 +51,14 @@
                         fromSelector:(SEL)selector
                                error:(__autoreleasing NSError **)error
 {
+    return [self HTMLStringWithMarkdown:string extensions:extensions imgClick:nil fromSelector:selector error:error];
+}
+
++ (NSString *)HTMLStringWithMarkdown:(NSString *)string
+                          extensions:(MMMarkdownExtensions)extensions
+                               imgClick:(NSString *)imgClick
+                        fromSelector:(SEL)selector
+                               error:(__autoreleasing NSError **)error {
     if (string == nil)
     {
         NSString *reason = [NSString stringWithFormat:@"[%@ %@]: nil argument for markdown",
@@ -63,6 +71,7 @@
     
     MMParser    *parser    = [[MMParser alloc] initWithExtensions:extensions];
     MMGenerator *generator = [MMGenerator new];
+    generator.imgClick = imgClick;
     
     MMDocument *document = [parser parseMarkdown:string error:error];
     

@@ -78,5 +78,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)HTMLStringWithMarkdown:(NSString *)string extensions:(MMMarkdownExtensions)extensions error:(NSError * __autoreleasing * _Nullable)error;
 
+
+/// Convert a Markdown string to HTML.
+/// @param string A Markdown string. Must not be nil.
+/// @param extensions The extensions to enable.
+/// @param imgClick imgClick Action.
+/// @param selector selector
+/// @param error error
++ (NSString *)HTMLStringWithMarkdown:(NSString *)string extensions:(MMMarkdownExtensions)extensions imgClick:(NSString * _Nullable)imgClick fromSelector:(SEL)selector error:(__autoreleasing NSError **)error;
+
 @end
 NS_ASSUME_NONNULL_END
