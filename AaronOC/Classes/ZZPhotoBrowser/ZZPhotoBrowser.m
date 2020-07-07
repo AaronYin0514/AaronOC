@@ -72,17 +72,22 @@
 }
 
 - (void)dismissAction {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
         _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, GHDevice.defaultDevice.screenWidth, GHDevice.defaultDevice.screenHeight)];
         _scrollView.backgroundColor = [UIColor blackColor];
-        _scrollView.pagingEnabled = YES;
         _scrollView.showsVerticalScrollIndicator = NO;
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.delegate = self;
+        _scrollView.maximumZoomScale = 2.0;
+        _scrollView.minimumZoomScale = 1.0;
+        _scrollView.alwaysBounceVertical = YES;
+        if (@available(iOS 11.0, *)) {
+            _scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
     }
     return _scrollView;
 }
