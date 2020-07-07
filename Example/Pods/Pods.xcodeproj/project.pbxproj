@@ -151,6 +151,8 @@
 		8EC923B053A34416C30E86131D14B358 /* GHNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CC54502ABA6382BBF0CB1AD4EE3A99 /* GHNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9197B1917CC94F46B7ECF956F9E42AAC /* EXPMatchers+FBSnapshotTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C252CFD04DC17AD0504AABDBB46ECB5 /* EXPMatchers+FBSnapshotTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91F08081D0286CC0733C2D5A9B4A8F32 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D462091B0B297DA65FD3F10937EFB1A /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		933990D324B3FAE400B76203 /* ZZPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 933990D124B3FAE400B76203 /* ZZPhotoBrowser.h */; };
+		933990D424B3FAE400B76203 /* ZZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 933990D224B3FAE400B76203 /* ZZPhotoBrowser.m */; };
 		9501262D83639D5412AC3A86F528B63D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E4BAC3A8E1595D160E6B347EFE2112 /* Foundation.framework */; };
 		9555CCBD633CC94AF10B2417A0DEEADD /* UITableView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = A7508FFE3AE224578C33647EF5DB735F /* UITableView+Ext.m */; };
 		96BC54118F99CACBCEDE0B64784E0737 /* Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCDD127923D81FCC10FA3EC547194B7 /* Expecta-dummy.m */; };
@@ -508,6 +510,8 @@
 		8FC855AF7605D8CE93BDE09F7F1BA422 /* NSDate+Ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+Ext.h"; sourceTree = "<group>"; };
 		91ABA9EC2A995AE92D0D7CA6C0FBEFF9 /* Pods-AaronOC_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AaronOC_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		932012295DBE9940094FF147CF412A27 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
+		933990D124B3FAE400B76203 /* ZZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPhotoBrowser.h; sourceTree = "<group>"; };
+		933990D224B3FAE400B76203 /* ZZPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPhotoBrowser.m; sourceTree = "<group>"; };
 		9360C59695D29750009E78F4E974E859 /* NSString+Ext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
 		9392407C48D3EE80025186936C70627F /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
 		9441A311708D639B846E38C432211FAF /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
@@ -816,6 +820,7 @@
 		2FD35C82B2463358F04140A9782BC34E /* AaronOC */ = {
 			isa = PBXGroup;
 			children = (
+				933990D024B3FAE400B76203 /* ZZPhotoBrowser */,
 				B1983C2324911FEF002E0720 /* Markdown */,
 				A322054BADE055B6A2D97606BB781AF3 /* AaronOC.h */,
 				751981902B2CB1FD2B26C6885C82F709 /* Algorithm */,
@@ -1073,6 +1078,16 @@
 				B5B89E42258BE32A66C75CB2AB3C6E1D /* SwiftSupport */,
 			);
 			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		933990D024B3FAE400B76203 /* ZZPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				933990D124B3FAE400B76203 /* ZZPhotoBrowser.h */,
+				933990D224B3FAE400B76203 /* ZZPhotoBrowser.m */,
+			);
+			name = ZZPhotoBrowser;
+			path = AaronOC/Classes/ZZPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		9487DDF193280BA42860DCE5831B83E3 /* Products */ = {
@@ -1516,6 +1531,7 @@
 				1497A1D864FA46A1266A063139D76C79 /* UIPasteboard+Ext.h in Headers */,
 				B1983C3C24911FEF002E0720 /* MMGenerator.h in Headers */,
 				526C26613129829C9794CFE1EC8C6314 /* UITableView+Ext.h in Headers */,
+				933990D324B3FAE400B76203 /* ZZPhotoBrowser.h in Headers */,
 				B1983C4024911FEF002E0720 /* MMDocument_Private.h in Headers */,
 				A4DE5CF9D6056AC3435DB73EF16306C8 /* UIView+Ext.h in Headers */,
 				720EF04949EADC61A47413416B03D463 /* UIViewController+TopMost.h in Headers */,
@@ -1845,6 +1861,7 @@
 				F53023AD02409DE0DA43ED236E4A45EA /* NSURL+Ext.m in Sources */,
 				0CFCBFE93FC264C87832DD6FEC9FEDB9 /* UIApplication+Communication.m in Sources */,
 				6B19A15B6E0BC8D1E63216F8E9318778 /* UIColor+Ext.m in Sources */,
+				933990D424B3FAE400B76203 /* ZZPhotoBrowser.m in Sources */,
 				C952FD3137377AB1C8DD6ADCBD1D2E00 /* UIImage+Crop.m in Sources */,
 				B2600C25CA1638A2D5106A1DD1FA7777 /* UIImage+Ext.m in Sources */,
 				2548FF86F39BB8A7366914C986360925 /* UIImage+ImageFrame.m in Sources */,
