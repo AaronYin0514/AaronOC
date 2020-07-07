@@ -8,6 +8,7 @@
 #import "ZZPhotoBrowser.h"
 #import "AnimationButton.h"
 #import "GHDevice.h"
+#import "GHNetworking.h"
 
 @interface ZZPhotoBrowser () <UIScrollViewDelegate>
 
@@ -17,6 +18,8 @@
 
 @property (nonatomic, strong) AnimationButton *closeButton;
 
+@property (nonatomic, strong) GHHTTPSessionManager *sessionManager;
+
 @end
 
 @implementation ZZPhotoBrowser
@@ -24,6 +27,19 @@
 - (instancetype)initWithImage:(UIImage *)image {
     if (self = [super init]) {
         self.imageView.image = image;
+    }
+    return self;
+}
+
+- (instancetype)initWithImageURL:(NSURL *)URL {
+    if (self = [super init]) {
+        [self.sessionManager GET:URL parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            if ([responseObject isKindOfClass:[UIImage class]]) {
+                self.imageView.image = (UIImage *)responseObject;
+            }
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error, id  _Nullable responseObject) {
+            NSLog(@"图片获取失败");
+        }];
     }
     return self;
 }
@@ -85,6 +101,14 @@
         [_closeButton addTarget:self action:@selector(closeAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _closeButton;
+}
+
+- (GHHTTPSessionManager *)sessionManager {
+    if (!_sessionManager) {
+        _sessionManager = [[GHHTTPSessionManager alloc] init];
+        _sessionManager.responseSerializer = [[GHImageResponseSerializer alloc] init];
+    }
+    return _sessionManager;
 }
 
 #pragma mark - UIScrollViewDelegate

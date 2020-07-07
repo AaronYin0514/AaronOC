@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithImage:(UIImage *)image;
 
+- (instancetype)initWithImageURL:(NSURL *)URL;
+
 - (void)setCloseButtonImage:(UIImage *)image;
 
 @end
