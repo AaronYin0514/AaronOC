@@ -33,7 +33,7 @@
 
 - (instancetype)initWithImageURL:(NSURL *)URL {
     if (self = [super init]) {
-        [self.sessionManager GET:URL parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [self.sessionManager GET:URL.absoluteString parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             if ([responseObject isKindOfClass:[UIImage class]]) {
                 self.imageView.image = (UIImage *)responseObject;
             }
