@@ -51,12 +51,12 @@
     [self.scrollView addSubview:self.imageView];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
     tap.numberOfTapsRequired = 2;
-    [self.imageView addGestureRecognizer:tap];
+    [self.scrollView addGestureRecognizer:tap];
     [self.view addSubview:self.closeButton];
 }
 
 - (void)tapAction:(UITapGestureRecognizer *)tap {
-    if (self.scrollView.contentSize.width == self.scrollView.frame.size.width) {
+    if (self.scrollView.contentSize.width <= self.scrollView.frame.size.width) {
         [self.scrollView setZoomScale:2.0 animated:YES];
     } else {
         [self.scrollView setZoomScale:1.0 animated:YES];
