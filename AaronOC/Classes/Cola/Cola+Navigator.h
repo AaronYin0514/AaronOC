@@ -8,6 +8,8 @@
 #import "Cola.h"
 #import "UIViewController+TopMost.h"
 
+typedef NSString * const ColaModalPresentationStyleKey;
+
 typedef UIViewController * __nullable (^NavigatorFactory)(NSURL * __nonnull URL, NSDictionary * __nonnull parameters, NSDictionary * __nullable userInfo);
 
 NS_ASSUME_NONNULL_BEGIN

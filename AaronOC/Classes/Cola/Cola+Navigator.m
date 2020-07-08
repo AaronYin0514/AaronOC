@@ -7,6 +7,8 @@
 
 #import "Cola+Navigator.h"
 
+NSString * const ColaModalPresentationStyleKey = @"ColaModalPresentationStyleKey";
+
 @implementation Cola (Navigator)
 
 - (void)registerURL:(NSURL *)URL navigatorHandler:(NavigatorFactory)handler {
@@ -62,6 +64,10 @@
     }
     if (wrap && [[[wrap alloc] init] isKindOfClass:[UINavigationController class]] && ![controller isKindOfClass:[UINavigationController class]]) {
         UINavigationController *navigationController = [[wrap alloc] initWithRootViewController:controller];
+        NSNumber *modal = userInfo[ColaModalPresentationStyleKey];
+        if (modal) {
+            navigationController.modalPresentationStyle = [modal integerValue];
+        }
         [presentedViewController presentViewController:navigationController animated:flag completion:completion];
     } else {
         [presentedViewController presentViewController:controller animated:flag completion:completion];
